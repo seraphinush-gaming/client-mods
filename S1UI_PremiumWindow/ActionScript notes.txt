@@ -1,0 +1,52 @@
+//////////////// TERAHelper 0.11 - by GoneUp
+
+S1UI_PremiumWindow.gpk > Core > Texture2D > PremiumWindow_I52
+- SizeY value from `512` to `260`
+- Export DDS, edit DDS, then import DDS
+- Raw 
+
+S1UI_PremiumWindow.gpk > Core > GFxMovieInfo > PremiumWindow
+- Big ByteProp export `RawData` array
+
+
+
+//////////////// JPEXS Free Flash Decompiler
+
+shapes > DefineShapes(41)	
+- Raw edit	
+- shapeBounds : RECT > Ymax 2000 to 1100
+
+shapes > DefineShapes(42)	
+- Raw edit	
+- hasScale : boolean = true
+- scaleX : FB[nScaleBits] = 66356
+- scaleY : FB[nScaleBits] = 132712
+
+shapes > DefineShapes(83)
+- Raw edit
+- shapeBounds : RECT > Ymax 9600 to 5000
+
+sprites > DefineSprites(57) > frame 1 > PlaceObject2 (41) Depth: 1
+- Raw edit
+- scaleY : FB[nScaleBits] = from 33980 to 67960
+
+sprites > DefineSprites(84) > frame 1 > PlaceObject2 (83) Depth: 1
+- Raw edit
+- hasScale : boolean = true
+- scaleX : FB[nScaleBits] = 66356
+- scaleY : FB[nScaleBits] = 33178
+
+sprites > DefineSprites(92) > frame 1
+- Raw edit
+- Remove with dependencies :
+-- mc_tab_0
+-- mc_tab_1
+-- txtBtn1
+-- text_info_1
+-- text_info_2
+
+scripts > __Packages > g4 > view > premiumWindow > PremiumWindow
+- line 1191
+- line 1203
+- line 1209
+-- `Push "_visible" register2` to `Push "_visible" false`
