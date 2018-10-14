@@ -15,7 +15,7 @@
 
 ## Credits
 - Owyn
-- GIO
+- GI0
 - GoneUp for TERAHelper 0.11
 - EU TERA Mods discord server
 - Neowutran for S1UI-GPU
