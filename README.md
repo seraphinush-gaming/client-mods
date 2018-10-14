@@ -1,5 +1,4 @@
-# S1UI-mod-kr
-TERA UI mod for KR server
+﻿# client-mod
 
 ## Installation
 - Make directory at TERA/S1Game/CookedPC called `_mod`
@@ -7,6 +6,7 @@ TERA UI mod for KR server
 - [Preview](https://seraphinush-gaming.tumblr.com/teramod)
 
 ## Inven post link
+- [SHIFT+CLICK 살펴보기 클라이언트 모드](http://www.inven.co.kr/board/tera/2152/27713)
 - [프리미엄 창 투명 모드 (추가)](http://www.inven.co.kr/board/tera/2152/27473)
 - [프리미엄 UI 수정 때문에 다른 UI까지 수정해버렸다](http://www.inven.co.kr/board/tera/2152/27481)
 
@@ -15,13 +15,16 @@ TERA UI mod for KR server
 
 ## Credits
 - Owyn
+- GIO
 - GoneUp for TERAHelper 0.11
-- TERA Mods discord server
+- EU TERA Mods discord server
 - Neowutran for S1UI-GPU
 
 ## Changelog
 <details>
 
+    2018.10.13
+    - Added S1UI_Chat2
     2018.10.07
     - Removed S1UI_MiniMap
     - Removed S1UI_PremiumWindow
