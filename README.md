@@ -1,4 +1,5 @@
-﻿# client-mod
+# client-mod
+TERA S1UI client mod
 
 ## Installation
 - Make directory at TERA/S1Game/CookedPC called `_mod`
