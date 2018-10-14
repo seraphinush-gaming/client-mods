@@ -1,0 +1,23 @@
+﻿NOTE : Basic syllogism of instructions are taken from Owyn's ActionScript notes for the old UI, and permission was granted to make use of those notes to create auto-inspect client mod on S1UI_Chat2.gpk. only auto-inspect function was taken and implemented
+
+//////////////// JPEXS Free Flash Decompiler
+
+S1UI_Chat2.gpk/scripts/__Packages/g4/view/chat/Chat.as
+- Function call here at line :
+  - Actionscript : line 50
+  - P-code : line 456
+- CHANGE :
+      if(_global.shift)
+      {
+         g4.model.GameModel.chatModel.ToGame_Chat_ClickName(_loc3_,_loc4_,_loc2_,"SHIFT");
+      }
+- TO :
+      if(_global.shift)
+      {
+         g4.model.GameModel.chatModel.ToGame_Chat_SendWriting(0,"<FONT>/inspect " + _loc4_ + "</FONT>",undefined,"/inspect " + _loc4_);
+      }
+- OR :
+      if(_global.shift)
+      {
+         g4.model.GameModel.chatModel.ToGame_Chat_SendWriting(0,"<FONT>/살펴보기 " + _loc4_ + "</FONT>",undefined,"/살펴보기 " + _loc4_);
+      }
