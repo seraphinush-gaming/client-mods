@@ -16,8 +16,32 @@ S1UI_Chat2.gpk/scripts/__Packages/g4/view/chat/Chat.as
       {
          g4.model.GameModel.chatModel.ToGame_Chat_SendWriting(0, "<FONT>/inspect " + _loc3_ + "</FONT>", undefined, "/inspect " + _loc3_);
       }
+=
+
 - OR :
       if(_global.shift)
       {
          g4.model.GameModel.chatModel.ToGame_Chat_SendWriting(0, "<FONT>/살펴보기 " + _loc3_ + "</FONT>", undefined, "/살펴보기 " + _loc3_);
       }
+=
+loc0d17:Push register1 "shift"
+GetMember
+Not
+If loc0c22
+Push "/살펴보기 " register3
+Add2
+Push undefined "<FONT>/살펴보기 " register3
+Add2
+Push "</FONT>"
+Add2
+Push 0 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_SendWriting"
+CallMethod
+Pop
