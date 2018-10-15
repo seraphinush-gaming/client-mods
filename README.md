@@ -24,6 +24,8 @@ TERA S1UI client mod
 ## Changelog
 <details>
 
+    2018.10.15
+    - Fixed Chat2 for KR
     2018.10.14
     - Restored PremiumWindow zip files
     2018.10.13
