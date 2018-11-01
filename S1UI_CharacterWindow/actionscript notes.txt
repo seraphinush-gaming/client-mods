@@ -1,0 +1,8 @@
+//// all champion laurel 
+
+S1UI_CharacterWindow.gpk > scripts >__Packages > g4 > core > view > CharacterWindow
+- AS line : 200 | P-code line : 1053
+- CHANGE :
+    Push register2 1
+- TO :
+    Push 5 1

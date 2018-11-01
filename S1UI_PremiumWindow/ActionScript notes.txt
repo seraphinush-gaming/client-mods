@@ -1,4 +1,4 @@
-//////////////// TERAHelper 0.11 - by GoneUp
+//// TERAHelper 0.11 - by GoneUp
 
 S1UI_PremiumWindow.gpk > Core > Texture2D > PremiumWindow_I52
 - SizeY value from `512` to `260`
@@ -9,8 +9,7 @@ S1UI_PremiumWindow.gpk > Core > GFxMovieInfo > PremiumWindow
 - Big ByteProp export `RawData` array
 
 
-
-//////////////// JPEXS Free Flash Decompiler
+//// JPEXS Free Flash Decompiler
 
 shapes > DefineShapes(41)	
 - Raw edit	
