@@ -4,12 +4,7 @@ TERA S1UI client mod
 ## Installation
 - Make directory at TERA/S1Game/CookedPC called `_mod`
 - Unzip wanted client mods into `_mod` folder
-- [Preview](https://seraphinush-gaming.tumblr.com/teramod)
-
-## Inven post link
-- [SHIFT+CLICK 살펴보기 클라이언트 모드](http://www.inven.co.kr/board/tera/2152/27713)
-- [프리미엄 창 투명 모드 (추가)](http://www.inven.co.kr/board/tera/2152/27473)
-- [프리미엄 UI 수정 때문에 다른 UI까지 수정해버렸다](http://www.inven.co.kr/board/tera/2152/27481)
+- [Preview](https://github.com/seraphinush-gaming/client-mod/wiki/TERA-client-mod)
 
 ## Info
 - **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
