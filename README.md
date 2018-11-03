@@ -4,7 +4,7 @@ TERA S1UI client mod
 ## Installation
 - Make directory at TERA/S1Game/CookedPC called `_mod`
 - Unzip wanted client mods into `_mod` folder
-- [Preview](https://github.com/seraphinush-gaming/client-mod/wiki/TERA-client-mod)
+- [Preview](https://github.com/seraphinush-gaming/client-mod/wiki)
 
 ## Info
 - **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
