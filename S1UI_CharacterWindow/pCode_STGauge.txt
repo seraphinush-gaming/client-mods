@@ -1,0 +1,1582 @@
+ConstantPool "_global" "g4" "Object" "view" "characterWindow" "STGauge" "MovieClip" "prototype" "onLoad" "mGaugeLight" "mGauge" "mGaugeType" "mGaugeType0" "mGaugeType4" "mFullBackground" "mFullAnim" "mBackground" "mGauge0" "mGauge1" "mGauge2" "mFullClass" "mClass" "stop" "_visible" "mAwaken" "mElement0" "mElement1" "mElement2" "mFullStack" "util" "UIUtil" "TEXT_FIELD_STYLE_1" "tST0" "setTextFieldStyle" "tST1" "tStack" "setClass" "_class" "gotoAndStop" "mLight" "mc" "mStackCover" "flash" "geom" "ColorTransform" "redMultiplier" "greenMultiplier" "blueMultiplier" "textColor" "$1020" "redOffset" "greenOffset" "blueOffset" "textType" "text" "0" "$013159" "$013179" "$013191" "$013200" "$1022" "mEffect" "transform" "colorTransform" "lib" "manager" "ToolTip" "add" "updateST" "Math" "round" "isNaN" "_st" "TweenX" "killTweenOf" "gs" "easing" "Strong" "easeOut" "st" "to" "-" "" "gotoAndPlay" "filters" "DropShadowFilter" "_prevST" "updateStack" "_prevStack" "setAwaken" "setAwakenWizard" "_alpha" "comp" "__get__st" "__set__st" "mMask" "showValue" "mClassBack" "addProperty" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc03a7
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc03a7:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc03e5
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc03e5:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Not
+Not
+If loc042f
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow" 0.0 "Object"
+NewObject
+SetMember
+loc042f:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "STGauge"
+GetMember
+Not
+Not
+If loc2acd
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "STGauge"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "STGauge"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "onLoad"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "mGaugeLight" register1 "mGauge"
+GetMember
+Push "mGaugeLight"
+GetMember
+SetMember
+Push register1 "mGaugeType" register1 "mGauge"
+GetMember
+Push "mGaugeType"
+GetMember
+SetMember
+Push register1 "mGaugeType0" register1 "mGauge"
+GetMember
+Push "mGaugeType0"
+GetMember
+SetMember
+Push register1 "mGaugeType4" register1 "mGauge"
+GetMember
+Push "mGaugeType4"
+GetMember
+SetMember
+Push register1 "mFullBackground" register1 "mFullAnim"
+GetMember
+Push "mBackground"
+GetMember
+SetMember
+Push register1 "mGauge0" register1 "mFullAnim"
+GetMember
+Push "mGauge0"
+GetMember
+SetMember
+Push register1 "mGauge1" register1 "mFullAnim"
+GetMember
+Push "mGauge1"
+GetMember
+SetMember
+Push register1 "mGauge2" register1 "mFullAnim"
+GetMember
+Push "mGauge2"
+GetMember
+SetMember
+Push register1 "mFullClass" register1 "mFullAnim"
+GetMember
+Push "mClass"
+GetMember
+SetMember
+Push 0.0 register1 "mFullAnim"
+GetMember
+Push "stop"
+CallMethod
+Pop
+Push register1 "mFullAnim"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mAwaken"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGaugeType4"
+GetMember
+Push "mFullStack"
+GetMember
+Push "_visible" false
+SetMember
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "tST0"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "tST1"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "tStack"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "setClass"
+DefineFunction2 "" 1 5 false false true false true false false true false 3 "$class"  {
+Push register1 "_class" register3
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register3 1
+Add2
+Push 1 register1 "mClass"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mGaugeLight"
+GetMember
+Push "mLight"
+GetMember
+Push "mc"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mGaugeType"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mFullBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mGauge0"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mGauge1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mGauge2"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3 1
+Add2
+Push 1 register1 "mFullClass"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mStackCover"
+GetMember
+Push "_visible" register3 0.0
+Equals2
+SetMember
+Push 0.0 "flash"
+GetVariable
+Push "geom"
+GetMember
+Push "ColorTransform"
+NewMethod
+StoreRegister 2
+Pop
+Push register2 "redMultiplier" 0.0
+SetMember
+Push register2 "greenMultiplier" 0.0
+SetMember
+Push register2 "blueMultiplier" 0.0
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 15329772
+SetMember
+Push undefined
+StoreRegister 4
+Pop
+Push register3
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc0b41
+Push register0 1
+StrictEquals
+If loc0bc1
+Push register0 2
+StrictEquals
+If loc0bc1
+Push register0 3
+StrictEquals
+If loc0bc1
+Push register0 4
+StrictEquals
+If loc0bdf
+Push register0 5
+StrictEquals
+If loc0c36
+Push register0 6
+StrictEquals
+If loc0c36
+Push register0 7
+StrictEquals
+If loc0c36
+Push register0 8
+StrictEquals
+If loc0c36
+Push register0 9
+StrictEquals
+If loc0c54
+Push register0 10
+StrictEquals
+If loc0cc8
+Push register0 11
+StrictEquals
+If loc0d3c
+Push register0 12
+StrictEquals
+If loc0db0
+Push register0 20
+StrictEquals
+If loc0e24
+Push register0 21
+StrictEquals
+If loc0e24
+Push register0 22
+StrictEquals
+If loc0e24
+Jump loc0e3d
+loc0b41:Push "$1020" 15 register3
+Add2
+Add2
+StoreRegister 4
+Pop
+Push register2 "redOffset" 255
+SetMember
+Push register2 "greenOffset" 50
+SetMember
+Push register2 "blueOffset" 33
+SetMember
+Push register1 "textType" 1
+SetMember
+Push register1 "tStack"
+GetMember
+Push "text" "0"
+SetMember
+Jump loc0e3d
+loc0bc1:Push "$1020" 15 register3
+Add2
+Add2
+StoreRegister 4
+Pop
+Jump loc0e3d
+loc0bdf:Push "$1020" 15 register3
+Add2
+Add2
+StoreRegister 4
+Pop
+Push register2 "redOffset" 159
+SetMember
+Push register2 "greenOffset" 95
+SetMember
+Push register2 "blueOffset" 255
+SetMember
+Jump loc0e3d
+loc0c36:Push "$1020" 15 register3
+Add2
+Add2
+StoreRegister 4
+Pop
+Jump loc0e3d
+loc0c54:Push register1 "textType" 2
+SetMember
+Push register2 "redOffset" 39
+SetMember
+Push register2 "greenOffset" 120
+SetMember
+Push register2 "blueOffset" 254
+SetMember
+Push "$013159"
+StoreRegister 4
+Pop
+Push register1 "tST0"
+GetMember
+Push "textColor" 10350847
+SetMember
+Jump loc0e3d
+loc0cc8:Push register1 "textType" 2
+SetMember
+Push "$013179"
+StoreRegister 4
+Pop
+Push register2 "redOffset" 239
+SetMember
+Push register2 "greenOffset" 160
+SetMember
+Push register2 "blueOffset" 34
+SetMember
+Push register1 "tST0"
+GetMember
+Push "textColor" 16766580
+SetMember
+Jump loc0e3d
+loc0d3c:Push register1 "textType" 2
+SetMember
+Push register2 "redOffset" 143
+SetMember
+Push register2 "greenOffset" 96
+SetMember
+Push register2 "blueOffset" 255
+SetMember
+Push "$013191"
+StoreRegister 4
+Pop
+Push register1 "tST0"
+GetMember
+Push "textColor" 14338047
+SetMember
+Jump loc0e3d
+loc0db0:Push register1 "textType" 2
+SetMember
+Push register2 "redOffset" 254
+SetMember
+Push register2 "greenOffset" 192
+SetMember
+Push register2 "blueOffset" 50
+SetMember
+Push "$013200"
+StoreRegister 4
+Pop
+Push register1 "tST0"
+GetMember
+Push "textColor" 16646029
+SetMember
+Jump loc0e3d
+loc0e24:Push "$1022" 47 register3
+Add2
+Add2
+StoreRegister 4
+Pop
+loc0e3d:Push register1 "mEffect"
+GetMember
+Push "transform"
+GetMember
+Push "colorTransform" register2
+SetMember
+Push register3 4
+Equals2
+Not
+If loc0e94
+Push 2 1 register1 "mBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc0eb6
+loc0e94:Push 1 1 register1 "mBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc0eb6:Push register1 "mGaugeType"
+GetMember
+Push "_visible" register3 0.0
+Equals2
+Not
+SetMember
+Push register1 "mGaugeType0"
+GetMember
+Push "_visible" register3 0.0
+Equals2
+SetMember
+Push register1 "mGaugeType4"
+GetMember
+Push "_visible" register3 4
+Equals2
+SetMember
+Push 1 register4 register1 "mClass"
+GetMember
+Push 3 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "ToolTip"
+GetMember
+Push "add"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "updateST"
+DefineFunction2 "" 5 6 false false true false true false false true false 3 "$st" 4 "$maxSt" 0 "$str" 0 "$maxStr" 0 "$time"  {
+Push register1 "_class"
+GetMember
+Push -1
+Equals2
+Not
+If loc0fad
+Push undefined
+Return
+loc0fad:Push register1 "_class"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc0fd0
+Push undefined
+Return
+loc0fd0:Push register3
+ToNumber
+StoreRegister 3
+Pop
+Push register4
+ToNumber
+StoreRegister 4
+Pop
+Push register1 "tST0"
+GetMember
+Push "text" register3
+ToString
+SetMember
+Push register1 "tST1"
+GetMember
+Push "text" register4
+ToString
+SetMember
+Push register3 register4
+Divide
+StoreRegister 2
+Pop
+Push register2 100
+Multiply
+StoreRegister 2
+Pop
+Push register2 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 1 "isNaN"
+CallFunction
+Not
+If loc107f
+Push 0.0
+StoreRegister 2
+Pop
+loc107f:Push register1 "_st"
+GetMember
+Push 1 "isNaN"
+CallFunction
+Not
+If loc10ae
+Push register1 "_st" register2
+SetMember
+loc10ae:Push register1 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeOut"
+GetMember
+Push "st" register2 1
+InitObject
+Push 0.5 register1 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "to"
+CallMethod
+Pop
+Push register4 0.0
+Equals2
+Not
+If loc11b2
+Push 1 1 register1 "mFullAnim"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mFullAnim"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "text" "-"
+SetMember
+Push register1 "tST1"
+GetMember
+Push "text" ""
+SetMember
+Jump loc1e42
+loc11b2:Push register3 register4
+Equals2
+Not
+If loc17fa
+Push register1 "mFullAnim"
+GetMember
+Push "_visible"
+GetMember
+Not
+Not
+If loc124b
+Push 2 1 register1 "mFullAnim"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1 "mFullAnim"
+GetMember
+Push "_visible" true
+SetMember
+Push 2 1 register1 "mEffect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1 "mEffect"
+GetMember
+Push "_visible" true
+SetMember
+loc124b:Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 9
+StrictEquals
+If loc12a6
+Push register0 10
+StrictEquals
+If loc13fb
+Push register0 11
+StrictEquals
+If loc1550
+Push register0 12
+StrictEquals
+If loc16a5
+Jump loc17f5
+loc12a6:Push register1 "tST0"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 55551 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 55551 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc17f5
+loc13fb:Push register1 "tST0"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 16731648 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 16731648 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc17f5
+loc1550:Push register1 "tST0"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 5322239 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 5322239 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc17f5
+loc16a5:Push register1 "tST0"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 16777215
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 16762887 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.3 6 6 1 16762887 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+loc17f5:Jump loc1df3
+loc17fa:Push register1 "mFullAnim"
+GetMember
+Push "_visible"
+GetMember
+Not
+If loc1849
+Push 1 1 register1 "mFullAnim"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mFullAnim"
+GetMember
+Push "_visible" false
+SetMember
+loc1849:Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 9
+StrictEquals
+If loc18a4
+Push register0 10
+StrictEquals
+If loc19f9
+Push register0 11
+StrictEquals
+If loc1b4e
+Push register0 12
+StrictEquals
+If loc1ca3
+Jump loc1df3
+loc18a4:Push register1 "tST0"
+GetMember
+Push "textColor" 10350847
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 15329772
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc1df3
+loc19f9:Push register1 "tST0"
+GetMember
+Push "textColor" 16766580
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 15329772
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc1df3
+loc1b4e:Push register1 "tST0"
+GetMember
+Push "textColor" 14338047
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 15329772
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc1df3
+loc1ca3:Push register1 "tST0"
+GetMember
+Push "textColor" 16646029
+SetMember
+Push register1 "tST1"
+GetMember
+Push "textColor" 15329772
+SetMember
+Push register1 "tST0"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Push register1 "tST1"
+GetMember
+Push "filters" false false false 0.0 2.5 3 3 1 1447449 90 0.0 11 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+loc1df3:Push register1 "_prevST"
+GetMember
+Push register3
+Less2
+Not
+If loc1e32
+Push 2 1 register1 "mGaugeLight"
+GetMember
+Push "mLight"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc1e32:Push register1 "_prevST" register3
+SetMember
+}
+loc1e42:SetMember
+Push register2 "updateStack"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$stack"  {
+Push register1 "_prevStack"
+GetMember
+Push register3
+Less2
+Not
+If loc1ee4
+Push register1 "_prevStack"
+GetMember
+StoreRegister 2
+Pop
+loc1e87:Push register2 register3
+Less2
+Not
+If loc1edf
+Push 2 1 register1 "mGaugeType0"
+GetMember
+Push "mGauge" register2 1
+Add2
+Add2
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1e87
+loc1edf:Jump loc1f63
+loc1ee4:Push register1 "_prevStack"
+GetMember
+Push register3
+Greater
+Not
+If loc1f63
+Push register3
+StoreRegister 2
+Pop
+loc1f05:Push register2 register1 "_prevStack"
+GetMember
+Less2
+Not
+If loc1f63
+Push 1 1 register1 "mGaugeType0"
+GetMember
+Push "mGauge" register2 1
+Add2
+Add2
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1f05
+loc1f63:Push register3 10
+Equals2
+Not
+If loc2004
+Push register1 "mFullAnim"
+GetMember
+Push "_visible"
+GetMember
+Not
+Not
+If loc1fff
+Push 2 1 register1 "mFullAnim"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1 "mFullAnim"
+GetMember
+Push "_visible" true
+SetMember
+Push 2 1 register1 "mEffect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1 "mEffect"
+GetMember
+Push "_visible" true
+SetMember
+loc1fff:Jump loc203c
+loc2004:Push 1 1 register1 "mFullAnim"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mFullAnim"
+GetMember
+Push "_visible" false
+SetMember
+loc203c:Push register3 10
+Equals2
+Not
+If loc20ea
+Push register1 "tStack"
+GetMember
+Push "textColor" 16761049
+SetMember
+Push register1 "tStack"
+GetMember
+Push "filters" 0.0 2 6 6 1 16711680 90 0.0 8 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc2231
+loc20ea:Push register3 2
+Greater
+Not
+If loc2198
+Push register1 "tStack"
+GetMember
+Push "textColor" 16761049
+SetMember
+Push register1 "tStack"
+GetMember
+Push "filters" 0.0 2 6 6 1 16711800 90 0.0 8 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+Jump loc2231
+loc2198:Push register1 "tStack"
+GetMember
+Push "textColor" 16761049
+SetMember
+Push register1 "tStack"
+GetMember
+Push "filters" 0.0 2.5 3 3 1 1447449 90 0.0 8 "flash"
+GetVariable
+Push "filters"
+GetMember
+Push "DropShadowFilter"
+NewMethod
+Push 1
+InitArray
+SetMember
+loc2231:Push 1
+StoreRegister 2
+Pop
+loc223e:Push register2 10
+Greater
+Not
+Not
+If loc22b7
+Push register3 2
+Greater
+If loc2273
+Push 1
+Jump loc227b
+loc2273:Push 2
+loc227b:Push 1 register1 "mGaugeType0"
+GetMember
+Push "mGauge" register2
+Add2
+GetMember
+Push "mc"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc223e
+loc22b7:Push register1 "tStack"
+GetMember
+Push "text" register3
+ToString
+SetMember
+Push register1 "_prevStack" register3
+SetMember
+}
+SetMember
+Push register2 "setAwaken"
+DefineFunction "" 1 "$awaken"  {
+}
+SetMember
+Push register2 "setAwakenWizard"
+DefineFunction2 "" 4 7 false false true false true false false true false 4 "$element0" 3 "$element1" 2 "$element2" 5 "$stack"  {
+Push register4
+ToNumber
+StoreRegister 4
+Pop
+Push register3
+ToNumber
+StoreRegister 3
+Pop
+Push register2
+ToNumber
+StoreRegister 2
+Pop
+Push register5
+ToNumber
+StoreRegister 5
+Pop
+Push register4 1
+Equals2
+PushDuplicate
+Not
+If loc2388
+Pop
+Push register3 1
+Equals2
+loc2388:PushDuplicate
+Not
+If loc239e
+Pop
+Push register2 1
+Equals2
+loc239e:StoreRegister 6
+Pop
+Push register4 0.0
+Equals2
+Not
+If loc2404
+Push 1 1 register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc24de
+loc2404:Push register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "_visible" true
+SetMember
+Push register4 1
+Equals2
+Not
+If loc2461
+Push 1 1 register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc24de
+loc2461:Push register4 2
+Equals2
+Not
+If loc24a2
+Push 2 1 register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc24de
+loc24a2:Push register4 3
+Equals2
+Not
+If loc24de
+Push 2 1 register1 "mGaugeType4"
+GetMember
+Push "mElement0"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc24de:Push register3 0.0
+Equals2
+Not
+If loc253f
+Push 1 1 register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc2619
+loc253f:Push register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "_visible" true
+SetMember
+Push register3 1
+Equals2
+Not
+If loc259c
+Push 1 1 register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc2619
+loc259c:Push register3 2
+Equals2
+Not
+If loc25dd
+Push 2 1 register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc2619
+loc25dd:Push register3 3
+Equals2
+Not
+If loc2619
+Push 2 1 register1 "mGaugeType4"
+GetMember
+Push "mElement1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc2619:Push register2 0.0
+Equals2
+Not
+If loc267a
+Push 1 1 register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc2754
+loc267a:Push register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "_visible" true
+SetMember
+Push register2 1
+Equals2
+Not
+If loc26d7
+Push 1 1 register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc2754
+loc26d7:Push register2 2
+Equals2
+Not
+If loc2718
+Push 2 1 register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc2754
+loc2718:Push register2 3
+Equals2
+Not
+If loc2754
+Push 2 1 register1 "mGaugeType4"
+GetMember
+Push "mElement2"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc2754:Push register6
+Not
+If loc281e
+Push register1 "mGaugeType4"
+GetMember
+Push "mFullStack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mGaugeType4"
+GetMember
+Push "mFullStack"
+GetMember
+Push "_alpha" register5 100
+Multiply
+SetMember
+Push register1 "_prevStack"
+GetMember
+Push 1
+Equals2
+Not
+PushDuplicate
+Not
+If loc27cb
+Pop
+Push register5 1
+Equals2
+loc27cb:Not
+If loc2809
+Push register1 "mEffect"
+GetMember
+Push "_visible" true
+SetMember
+Push 2 1 register1 "mEffect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc2809:Push register1 "_prevStack" register5
+SetMember
+Jump loc284d
+loc281e:Push register1 "mGaugeType4"
+GetMember
+Push "mFullStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "_prevStack" -1
+SetMember
+}
+loc284d:SetMember
+Push register2 "comp"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "mEffect"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "__get__st"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_st"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__st"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "value"  {
+Push register1 "_st" register3
+SetMember
+Push register1 "_st"
+GetMember
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 1 register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2 1 register1 "mGauge"
+GetMember
+Push "mGaugeLight"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0 register1 "__get__st"
+CallMethod
+Return
+}
+SetMember
+Push register2 "showValue"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$value"  {
+Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push undefined
+Return
+}
+SetMember
+Push register2 "_class" -1
+SetMember
+Push register2 "_prevST" -1
+SetMember
+Push register2 "_st" 0.0
+SetMember
+Push register2 "_prevStack" 0.0
+SetMember
+Push register2 "textType" 0.0
+SetMember
+Push register2 "__set__st"
+GetMember
+Push register2 "__get__st"
+GetMember
+Push "st" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "STGauge"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc2acd:Pop

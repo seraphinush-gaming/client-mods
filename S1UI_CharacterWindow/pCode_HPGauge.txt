@@ -1,0 +1,642 @@
+ConstantPool "_global" "g4" "Object" "view" "characterWindow" "HPGauge" "MovieClip" "prototype" "onLoad" "mText" "onRelease" "textHandlerRelease" "util" "Delegate" "create" "mGauge" "mGaugeEffect" "onComplete" "hpHandlerComp" "mc" "TweenX" "killTweenOf" "gs" "easing" "Strong" "easeOut" "_x" "mMask" "_width" "to" "isPercent" "showText" "textField" "text" "_rate" "Math" "round" "%" "_hp" " / " "_hpMax" "_hpMaxAdd" " + " "updateHP" "mLineEnd" "mGaugeBack" "mEffect" "_visible" "easeIn" "gotoAndPlay" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc01c9
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc01c9:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc0207
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc0207:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Not
+Not
+If loc0251
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow" 0.0 "Object"
+NewObject
+SetMember
+loc0251:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "HPGauge"
+GetMember
+Not
+Not
+If loc0cd8
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "HPGauge"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "HPGauge"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "onLoad"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "mText"
+GetMember
+Push "onRelease" register1 "textHandlerRelease"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "onComplete" register1 "hpHandlerComp"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+}
+SetMember
+Push register2 "hpHandlerComp"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeOut"
+GetMember
+Push "_x" register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "mc"
+GetMember
+Push "_width"
+GetMember
+Push "_width" 0.0 2
+InitObject
+Push 0.3 register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "to"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "textHandlerRelease"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "isPercent" register1 "isPercent"
+GetMember
+Not
+SetMember
+Push 0.0 register1 "showText"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showText"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "isPercent"
+GetMember
+Not
+If loc0526
+Push register1 "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text" register1 "_rate"
+GetMember
+Push 1000
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+Push 10
+Divide
+Push "%"
+Add2
+SetMember
+Jump loc059e
+loc0526:Push register1 "_hp"
+GetMember
+Push " / "
+Add2
+Push register1 "_hpMax"
+GetMember
+Add2
+StoreRegister 2
+Pop
+Push register1 "_hpMaxAdd"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0582
+Push register2 " + " register1 "_hpMaxAdd"
+GetMember
+Add2
+Add2
+StoreRegister 2
+Pop
+loc0582:Push register1 "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text" register2
+SetMember
+}
+loc059e:SetMember
+Push register2 "updateHP"
+DefineFunction2 "" 3 10 false false true false true false false true false 3 "$hp" 6 "$maxHp" 4 "$maxHpAdd"  {
+Push register3
+ToNumber
+StoreRegister 3
+Pop
+Push register6
+ToNumber
+StoreRegister 6
+Pop
+Push register4
+ToNumber
+StoreRegister 4
+Pop
+Push register1 "_rate" register3 register6 register4
+Add2
+Divide
+SetMember
+Push register1 "_rate"
+GetMember
+Push 0.0
+Greater
+If loc0637
+Push 0.0
+Jump loc0642
+loc0637:Push register1 "_rate"
+GetMember
+loc0642:StoreRegister 2
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "mc"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mLineEnd"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mGaugeBack"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "killTweenOf"
+CallMethod
+Pop
+Push register1 "_hp"
+GetMember
+Push register3
+Greater
+Not
+If loc08b0
+Push register1 "mGauge"
+GetMember
+Push "mGaugeBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "_visible" false
+SetMember
+Push register2 252
+Multiply
+StoreRegister 7
+Pop
+Push "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeIn"
+GetMember
+Push "_width" register7 1
+InitObject
+Push 0.5 register1 "mGauge"
+GetMember
+Push "mGaugeBack"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "to"
+CallMethod
+Pop
+Push register2 245
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 5
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "mc"
+GetMember
+Push "_width" register5
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mLineEnd"
+GetMember
+Push "_x" register5 20
+Subtract
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push "_x" register5 19
+Subtract
+SetMember
+Jump loc0c07
+loc08b0:Push register1 "_hp"
+GetMember
+Push register3
+Less2
+Not
+If loc0b38
+Push register1 "mGauge"
+GetMember
+Push "mGaugeBack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeBack"
+GetMember
+Push "_width" register2 252
+Multiply
+SetMember
+Push register2 245
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 5
+Pop
+Push "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeOut"
+GetMember
+Push "_x" register5 19
+Subtract
+Push 1
+InitObject
+Push 0.5 register1 "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "to"
+CallMethod
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push "_x" register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "mc"
+GetMember
+Push "_width"
+GetMember
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push "_width" register5 register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push "_x"
+GetMember
+Subtract
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeOut"
+GetMember
+Push "_width" register5 1
+InitObject
+Push 0.5 register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "mc"
+GetMember
+Push 5 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "to"
+CallMethod
+Pop
+Push register5 20
+Subtract
+StoreRegister 5
+Pop
+Push "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeOut"
+GetMember
+Push "_x" register5 1
+InitObject
+Push 0.5 register1 "mGauge"
+GetMember
+Push "mLineEnd"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "TweenX"
+GetMember
+Push "to"
+CallMethod
+Pop
+Jump loc0c07
+loc0b38:Push register1 "mGauge"
+GetMember
+Push "mGaugeBack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mGaugeEffect"
+GetMember
+Push "mc"
+GetMember
+Push "_width" 0.0
+SetMember
+Push register2 245
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 5
+Pop
+Push register1 "mGauge"
+GetMember
+Push "mMask"
+GetMember
+Push "mc"
+GetMember
+Push "_width" register5
+SetMember
+Push register1 "mGauge"
+GetMember
+Push "mLineEnd"
+GetMember
+Push "_x" register5 20
+Subtract
+SetMember
+loc0c07:Push register2 0.1
+Greater
+Not
+If loc0c47
+Push 2 1 register1 "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc0c47:Push register1 "_hp" register3
+SetMember
+Push register1 "_hpMax" register6
+SetMember
+Push register1 "_hpMaxAdd" register4
+SetMember
+Push 0.0 register1 "showText"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "isPercent" true
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "HPGauge"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc0cd8:Pop

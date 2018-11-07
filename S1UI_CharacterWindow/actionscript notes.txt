@@ -1,8 +1,544 @@
-//// all champion laurel 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+//// All champion laurel 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 
 S1UI_CharacterWindow.gpk > scripts >__Packages > g4 > core > view > CharacterWindow
-- AS line : 200 | P-code line : 1053
-- CHANGE :
-    Push register2 1
-- TO :
-    Push 5 1
+{
+    1. line 1053 (AS line 200) :
+        FROM : Push register2 1
+        TO : Push 5 1
+
+}
+
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+//// Activiate STGauge as class-specific bar, deactivate STGauge rhombus
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+
+sprite > DefineSprite (407) : // invert HP decrease
+{
+    mGaugeBack
+    - //
+    mMask
+    - scaleX : -66536 to 66536
+    - translateX : 4900 to 0
+    - translateY : 20 to 0
+    - nTranslateBits : 14 to 0
+    mHPMark
+    - TranslateY : 20 to 0
+    "Remove" PlaceObject3 (392) Depth: 7 (mGaugeEffect)
+        {
+            mGaugeEffect
+            - scaleX : -66536 to 100
+            - scaleY : 46340 to 100
+            - rotateSkew1 : 46340 to 0
+            - translateX : 4880 to 0
+            - translateY : 20 to 0
+            - nTranslateBits : 14 to 0
+            - nRotateBits : 7 to 0
+        }
+    mLineEnd
+    - translateX : 0 to 4400
+    - translateY : 20 to 0
+    - nTranslateBits : 6 to 14
+    "Remove" PlaceObject2 (406) Depth: 13 (mEffect)
+        {
+            mEffect
+            - translateX : -100 to 0
+            - translateY : -40 to 0
+            - nTranslateBits : 8 to 0
+        }
+        
+}
+
+sprites > DefineSprite (452) : // move HPGauge to the top of MPGauge
+{
+    mHP
+    {
+        - hasScale : boolean = true
+        - scaleX : 0 to 65250
+        - scaleY : 0 to 65536
+    }
+    - translateX : 0 to 6480
+    - translateY : 840 to 445
+    tName
+    - translateX : 40 to 6550
+    - translateY : 500 to 135
+    tGear
+    - translateY : 520 to 155
+    mMaster
+    - translateX : 2280 to _
+    - translateY : 540 to 175
+    mEquip
+    - translateY : 500 to 135
+}
+
+texts > DefineEditText (408) > bounds : RECT : // shift MP gauge text to align with HPGauge text
+{
+    - ymax : 425 to 450
+}
+
+
+texts > DefineEditText (436) > bounds : RECT : // shift MP gauge text to align with HPGauge text
+{
+    - xmax : 4680 to 4800 to 4900 to 4870 to 4850
+}
+
+scripts > __Packages > g4 > view > characterWindow > CharacterWindow :
+
+1. line 732 to 761 (AS line 117) : // activate STGauge UI
+
+FROM :
+}
+SetMember
+Push register2 "OnGameEventUpdateST"
+DefineFunction2 "" 5 7 false false true false true false false true false 5 "$st" 6 "$maxSt" 3 "$str" 4 "$maxStr" 2 "$time"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc1373
+Push register0 1
+StrictEquals
+If loc1373
+Push register0 5
+StrictEquals
+If loc1373
+Jump loc1396
+loc1373:Push register2 register4 register3 register6 register5 5 register1 "mMP"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc13b9
+loc1396:Push register2 register4 register3 register6 register5 5 register1 "mST"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc13b9
+}
+
+TO :
+}
+SetMember
+Push register2 "OnGameEventUpdateST"
+DefineFunction2 "" 5 7 false false true false true false false true false 5 "$st" 6 "$maxSt" 3 "$str" 4 "$maxStr" 2 "$time"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc1373
+Push register0 1
+StrictEquals
+If loc1373
+Push register0 5
+StrictEquals
+If loc1373
+Push register0 9
+StrictEquals
+If loc1373
+Push register0 10
+StrictEquals
+If loc1373
+Push register0 11
+StrictEquals
+If loc1373
+Push register0 12
+StrictEquals
+If loc1373
+Jump loc1396
+loc1373:Push register2 register4 register3 register6 register5 5 register1 "mMP"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc13b9
+loc1396:Push register2 register4 register3 register6 register5 5 register1 "mST"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc13b9
+}
+
+2. line 309  : // deactivate rhombus gauge from updating entirely
+
+FROM :
+}
+loc0b52:SetMember
+Push register2 "gaugeValueHandlerShow"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$value"  {
+Push register3
+ToNumber
+Push 1
+Equals2
+Not
+StoreRegister 2
+Pop
+Push register2 1 register1 "mST"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+Push register2 1 register1 "mMP"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+}
+
+TO :
+}
+loc0b52:SetMember
+Push register2 "gaugeValueHandlerShow"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$value"  {
+Push register3
+ToNumber
+Push 1
+Equals2
+Not
+StoreRegister 2
+Pop
+Push register2 1 register1 "mMP"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+}
+
+
+
+scripts > __Packages > g4 > view > characterWindow > MPGauge :
+
+1. line 272 to 316 (AS line 45) : // let classes 9-12 use STGauge of MPGauge
+FROM :
+}
+loc0607:SetMember
+Push register2 "setClass"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$class"  {
+Push register1 "tStamina"
+GetMember
+Push "text" ""
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" false
+SetMember
+Push register2
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc0682
+Push register0 1
+StrictEquals
+If loc0682
+Push register0 5
+StrictEquals
+If loc0682
+Jump loc06b0
+loc0682:Push 2 1 register1 "mBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mStamina"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc06de
+loc06b0:Push 1 1 register1 "mBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mStamina"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc06de
+}
+
+TO :
+}
+loc0607:SetMember
+Push register2 "setClass"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$class"  {
+Push register1 "tStamina"
+GetMember
+Push "text" ""
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" false
+SetMember
+Push register2
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc0682
+Push register0 1
+StrictEquals
+If loc0682
+Push register0 5
+StrictEquals
+If loc0682
+Push register0 9
+StrictEquals
+If loc0682
+Push register0 10
+StrictEquals
+If loc0682
+Push register0 11
+StrictEquals
+If loc0682
+Push register0 12
+StrictEquals
+If loc0682
+Jump loc06b0
+loc0682:Push 2 1 register1 "mBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mStamina"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc06de
+loc06b0:Push 1 1 register1 "mBackground"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mStamina"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc06de
+}
+
+
+
+scripts > __Packages > g4 > view > characterWindow > STGauge :
+
+1. line 1520 to 1653 (AS line 414) : // deactivate show value on rhombus
+
+FROM :
+}
+SetMember
+Push register2 "showValue"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$value"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc2171
+Push register0 9
+StrictEquals
+If loc2171
+Push register0 10
+StrictEquals
+If loc2171
+Push register0 11
+StrictEquals
+If loc2171
+Push register0 12
+StrictEquals
+If loc2171
+Jump loc2176
+loc2171:Jump loc21e1
+loc2176:Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push undefined
+Return
+loc21e1:Push register2
+Not
+If loc22ba
+Push register1 "mClass"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mFullClass"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "textType"
+GetMember
+Push 1
+Equals2
+Not
+If loc226e
+Push register1 "tStack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc22b5
+loc226e:Push register1 "textType"
+GetMember
+Push 2
+Equals2
+Not
+If loc22b5
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" true
+SetMember
+loc22b5:Jump loc2320
+loc22ba:Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+}
+
+TO :
+}
+SetMember
+Push register2 "showValue"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$value"  {
+Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push undefined
+Return
+}
+
+
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+//// not necessary
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+
+scripts > __Packages > g4 > view > characterWindow > HPGauge : // change direction of HP decrement, credit : Gl0
+
+1. line 607 (AS line 82) :
+FROM :
+Push "_x" 245 register5
+TO :
+Push "_x" register5 20
+
+2. line 539 (AS line 72) :
+FROM :
+Push 245 register5
+TO : 
+Push register5 20
+
+3. line 460 (AS line 68) :
+FROM :
+Push "_x" 245 register5
+Subtract
+Push 4
+Subtract
+TO :
+Push "_x" register5 19
+Subtract
+
+4. line 413 (AS line 60) :
+FROM :
+Push "_x" 245 register5
+Subtract
+Push 4
+Subtract
+TO :
+Push "_x" register5 19
+Subtract
+
+5. line 406 (AS line 59) :
+FROM :
+Push "_x" 245 register5
+TO :
+Push "_x" register5 20

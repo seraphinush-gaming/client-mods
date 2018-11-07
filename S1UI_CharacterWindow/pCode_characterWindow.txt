@@ -1,0 +1,1253 @@
+ConstantPool "_global" "g4" "Object" "view" "characterWindow" "CharacterWindow" "core" "View" "prototype" "gameInterface" "ICharacterWindow" "getUIName" "ViewID" "CHARACTER_WINDOW" "configUI" "__get__targetMovieClip" "container_mc" "UIDrager" "setData" "mST" "STGauge" "tName" "mHP" "HPGauge" "mMP" "MPGauge" "tGear" "mGearCover" "mMaster" "util" "UIUtil" "TEXT_FIELD_STYLE_1" "setTextFieldStyle" "customizeData" "lib" "gamedata" "CustomizedUIDataCollection" "getInstance" "valueHandlerChange" "gfx" "events" "EventTypes" "VALUE_CHANGE" "addEventListener" "gfxPlayer" "testInterval" "tick" "setInterval" "onKeyDown" "keyHandlerDown" "Delegate" "create" "Key" "addListener" "gaugeValueHandlerShow" "showValue" "key" "CustomizedUIDataKey" "MAINGAUGE_SHOW_BOOLEAN" "value" "getCode" "1000" "500" "OnGameEventUpdateST" "_st" "0" "clearInterval" "setViewVisible" "OnGame_CharacterWindow_SetClass" "OnGameEventUpdateHP" "OnGameEventUpdateMP" "OnGame_CharacterWindow_AwakenWizard" "configGameInterface" "registerGameInterface" "OnGameEventUpdateUserName" "OnGameEventUpdateUserLevel" "OnGame_CharacterWindow_SetAwaken" "OnGame_CharacterWindow_SetEquipmentLevel" "OnGame_LogOut" "OnGame_CharacterWindow_UpdateStack" "OnGameEventAmIPartyMaster" "OnGame_CharacterWindow_AchievementRating" "OnGame_CharacterWindow_DebuffState" "OnGame_CharacterWindow_SpecialModeOn" "OnGame_CharacterWindow_SpecialModeOff" "OnGame_CharacterWindow_Debug" "updateName" "Lv. " "sLevel" " " "sName" "text" "_width" "textWidth" "Math" "round" "_x" "_class" "setClass" "valueOf" "updateST" "updateHP" "updateMP" "setAwaken" "manager" "ToolTip" "remove" "" "mEquip" "_visible" " <font size=\'16\' color=\'#FFFFFF\'>" "$021035" "UIString" "getUIString" "</font>" " <font size=\'16\' color=\'#80E71C\'>" "</font><br>" "<img src=\'lineBitmap\'/><br>" "$021036" "add" "updateStack" "gotoAndStop" "$023007" "$023013" "mAchievement" "_debuffState" "mGauge" "mHPMark" "mEffect" "mc0" "mc1" "mText" "textField" "setAwakenWizard" "isDebug" "_prevMP" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc06f4
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc06f4:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc0732
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc0732:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Not
+Not
+If loc077c
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow" 0.0 "Object"
+NewObject
+SetMember
+loc077c:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "CharacterWindow"
+GetMember
+Not
+Not
+If loc21c8
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "CharacterWindow"
+DefineFunction2 "" 1 3 false false false true true false true false false 2 "$targetMovie"  {
+Push register2 1 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "CharacterWindow"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "View"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "gameInterface"
+GetMember
+Push "ICharacterWindow"
+GetMember
+Push 1 "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "CharacterWindow"
+GetMember
+ImplementsOp
+Push register2 "getUIName"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHARACTER_WINDOW"
+GetMember
+Return
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 4 false false true false true false false true true  {
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push 0.0 register1 "getUIName"
+CallMethod
+Push 2 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "UIDrager"
+GetMember
+Push "setData"
+CallMethod
+Pop
+Push register1 "mST" "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "STGauge"
+GetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mST"
+GetMember
+CastOp
+SetMember
+Push register1 "tName" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "tName"
+GetMember
+SetMember
+Push register1 "mHP" "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "HPGauge"
+GetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mHP"
+GetMember
+CastOp
+SetMember
+Push register1 "mMP" "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "MPGauge"
+GetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mMP"
+GetMember
+CastOp
+SetMember
+Push register1 "tGear" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "tGear"
+GetMember
+SetMember
+Push register1 "mGearCover" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mGearCover"
+GetMember
+SetMember
+Push register1 "mMaster" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mMaster"
+GetMember
+SetMember
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "tName"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "tGear"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push register1 "customizeData" 0.0 "lib"
+GetVariable
+Push "gamedata"
+GetMember
+Push "CustomizedUIDataCollection"
+GetMember
+Push "getInstance"
+CallMethod
+SetMember
+Push "valueHandlerChange" register1 "gfx"
+GetVariable
+Push "events"
+GetMember
+Push "EventTypes"
+GetMember
+Push "VALUE_CHANGE"
+GetMember
+Push 3 register1 "customizeData"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push register2 "gfxPlayer"
+GetMember
+Not
+If loc0c2d
+Push register1 "testInterval" 500 "tick" register1 3 "setInterval"
+CallFunction
+SetMember
+Push 0.0
+InitObject
+StoreRegister 3
+Pop
+Push register3 "onKeyDown" register1 "keyHandlerDown"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register3 1 "Key"
+GetVariable
+Push "addListener"
+CallMethod
+Pop
+}
+loc0b52:SetMember
+Push register2 "gaugeValueHandlerShow"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$value"  {
+Push register3
+ToNumber
+Push 1
+Equals2
+Not
+StoreRegister 2
+Pop
+Push register2 1 register1 "mMP"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "valueHandlerChange"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$event"  {
+Push register2 "key"
+GetMember
+Push "lib"
+GetVariable
+Push "gamedata"
+GetMember
+Push "CustomizedUIDataKey"
+GetMember
+Push "MAINGAUGE_SHOW_BOOLEAN"
+GetMember
+Equals2
+Not
+If loc0d05
+Push register2 "value"
+GetMember
+Push 1 register1 "gaugeValueHandlerShow"
+CallMethod
+Pop
+}
+loc0d05:SetMember
+Push register2 "keyHandlerDown"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 "Key"
+GetVariable
+Push "getCode"
+CallMethod
+Push 65
+Equals2
+Not
+If loc0d75
+Push "1000" "500" 1000 500 4 register1 "OnGameEventUpdateST"
+CallMethod
+Pop
+Jump loc0e1e
+loc0d75:Push 0.0 "Key"
+GetVariable
+Push "getCode"
+CallMethod
+Push 68
+Equals2
+Not
+If loc0e1e
+Push register1 "_st" register1 "_st"
+GetMember
+Push 10
+Add2
+SetMember
+Push register1 "_st"
+GetMember
+Push 100
+Greater
+Not
+If loc0de8
+Push register1 "_st" 10
+SetMember
+loc0de8:Push "0" "0" 0.0 0.0 4 register1 "OnGameEventUpdateST"
+CallMethod
+Pop
+}
+loc0e1e:SetMember
+Push register2 "tick"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "testInterval"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+Push true 1 register1 "setViewVisible"
+CallMethod
+Pop
+Push 5 4 2 register1 "OnGame_CharacterWindow_SetClass"
+CallMethod
+Pop
+Push 0.0 1000 1000 3 register1 "OnGameEventUpdateHP"
+CallMethod
+Pop
+Push 0.0 1000 1000 3 register1 "OnGameEventUpdateMP"
+CallMethod
+Pop
+Push 0.66 1 3 1 4 register1 "OnGame_CharacterWindow_AwakenWizard"
+CallMethod
+Pop
+Push "1000" "500" 0.0 0.0 4 register1 "OnGameEventUpdateST"
+CallMethod
+Pop
+Push "1000" "500" 0.0 0.0 4 register1 "OnGameEventUpdateST"
+CallMethod
+Pop
+Push "1000" "500" 1000 500 4 register1 "OnGameEventUpdateST"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "configGameInterface"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "OnGame_CharacterWindow_SetClass"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_SetClass" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGameEventUpdateST"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventUpdateST" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGameEventUpdateUserName"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventUpdateUserName" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGameEventUpdateUserLevel"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventUpdateUserLevel" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGameEventUpdateHP"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventUpdateHP" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGameEventUpdateMP"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventUpdateMP" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_SetAwaken"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_SetAwaken" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_SetEquipmentLevel"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_SetEquipmentLevel" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_LogOut"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_LogOut" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_UpdateStack"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_UpdateStack" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGameEventAmIPartyMaster"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGameEventAmIPartyMaster" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_AchievementRating"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_AchievementRating" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_DebuffState"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_DebuffState" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_SpecialModeOn"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_SpecialModeOn" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_SpecialModeOff"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_SpecialModeOff" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_AwakenWizard"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_AwakenWizard" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+Push register1 "OnGame_CharacterWindow_Debug"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push "OnGame_CharacterWindow_Debug" 2 register1 "registerGameInterface"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "updateName"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push "Lv. " register1 "sLevel"
+GetMember
+ToString
+Add2
+StoreRegister 2
+Pop
+Push register2 " " register1 "sName"
+GetMember
+Add2
+Add2
+StoreRegister 2
+Pop
+Push register1 "tName"
+GetMember
+Push "text" register2
+SetMember
+Push register1 "tName"
+GetMember
+Push "_width" register1 "tName"
+GetMember
+Push "textWidth"
+GetMember
+Push 4
+Add2
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+SetMember
+Push register1 "mMaster"
+GetMember
+Push "_x" register1 "tName"
+GetMember
+Push "_x"
+GetMember
+Push register1 "tName"
+GetMember
+Push "_width"
+GetMember
+Add2
+SetMember
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_SetClass"
+DefineFunction2 "" 2 4 false false true false true false false true false 2 "$class" 3 "$gaugeType"  {
+Push register2
+ToNumber
+StoreRegister 2
+Pop
+Push register3
+ToNumber
+StoreRegister 3
+Pop
+Push register1 "_class" register2
+SetMember
+Push register2 1 register1 "mST"
+GetMember
+Push "setClass"
+CallMethod
+Pop
+Push register2 1 register1 "mMP"
+GetMember
+Push "setClass"
+CallMethod
+Pop
+Push "gaugeValueHandlerShow" register1 "lib"
+GetVariable
+Push "gamedata"
+GetMember
+Push "CustomizedUIDataKey"
+GetMember
+Push "MAINGAUGE_SHOW_BOOLEAN"
+GetMember
+Push 3 register1 "customizeData"
+GetMember
+Push "valueOf"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventUpdateST"
+DefineFunction2 "" 5 7 false false true false true false false true false 5 "$st" 6 "$maxSt" 3 "$str" 4 "$maxStr" 2 "$time"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc1373
+Push register0 1
+StrictEquals
+If loc1373
+Push register0 5
+StrictEquals
+If loc1373
+Push register0 9
+StrictEquals
+If loc1373
+Push register0 10
+StrictEquals
+If loc1373
+Push register0 11
+StrictEquals
+If loc1373
+Push register0 12
+StrictEquals
+If loc1373
+Jump loc1396
+loc1373:Push register2 register4 register3 register6 register5 5 register1 "mMP"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc13b9
+loc1396:Push register2 register4 register3 register6 register5 5 register1 "mST"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc13b9
+}
+loc1738:SetMember
+Push register2 "OnGameEventUpdateUserName"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$name"  {
+Push register1 "sName" register2
+SetMember
+Push 0.0 register1 "updateName"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventUpdateUserLevel"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$level"  {
+Push register1 "sLevel" register2
+ToString
+SetMember
+Push 0.0 register1 "updateName"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventUpdateHP"
+DefineFunction2 "" 3 5 false false true false true false false true false 3 "$hp" 4 "$maxHp" 2 "$maxHpAdd"  {
+Push register2 register4 register3 3 register1 "mHP"
+GetMember
+Push "updateHP"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventUpdateMP"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "$mp" 3 "$maxMp" 4 "$maxMpAdd"  {
+Push register4 register3 register2 3 register1 "mMP"
+GetMember
+Push "updateMP"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_SetAwaken"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$bAwaken"  {
+Push register2 1 register1 "mST"
+GetMember
+Push "setAwaken"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_SetEquipmentLevel"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$level"  {
+Push register1 "mGearCover"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "ToolTip"
+GetMember
+Push "remove"
+CallMethod
+Pop
+Push register3 0.0
+Equals2
+Not
+If loc195c
+Push register1 "tGear"
+GetMember
+Push "text" ""
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mEquip"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc1b9f
+loc195c:Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mEquip"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tGear"
+GetMember
+Push "text" register3
+ToString
+SetMember
+Push register1 "tGear"
+GetMember
+Push "_width" register1 "tGear"
+GetMember
+Push "textWidth"
+GetMember
+Push 4
+Add2
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+SetMember
+Push register1 "tGear"
+GetMember
+Push "_x" 590 register1 "tGear"
+GetMember
+Push "_width"
+GetMember
+Subtract
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mEquip"
+GetMember
+Push "_x" register1 "tGear"
+GetMember
+Push "_x"
+GetMember
+Push 19
+Subtract
+SetMember
+Push register1 "mGearCover"
+GetMember
+Push "_x" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mEquip"
+GetMember
+Push "_x"
+GetMember
+SetMember
+Push register1 "mGearCover"
+GetMember
+Push "_width" register1 "tGear"
+GetMember
+Push "_width"
+GetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mEquip"
+GetMember
+Push "_width"
+GetMember
+Add2
+SetMember
+Push " <font size=\'16\' color=\'#FFFFFF\'>" "$021035" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Add2
+Push "</font>"
+Add2
+StoreRegister 2
+Pop
+Push register2 " <font size=\'16\' color=\'#80E71C\'>" register3
+Add2
+Push "</font><br>"
+Add2
+Add2
+StoreRegister 2
+Pop
+Push register2 "<img src=\'lineBitmap\'/><br>"
+Add2
+StoreRegister 2
+Pop
+Push register2 "$021036" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Add2
+StoreRegister 2
+Pop
+Push 1 register2 register1 "mGearCover"
+GetMember
+Push 3 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "ToolTip"
+GetMember
+Push "add"
+CallMethod
+Pop
+}
+loc1b9f:SetMember
+Push register2 "OnGame_LogOut"
+DefineFunction "" 0  {
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_UpdateStack"
+DefineFunction2 "" 3 3 false false true false true false false true false 2 "$stack" 0 "$switch" 0 "$bDisable"  {
+Push register2 1 register1 "mST"
+GetMember
+Push "updateStack"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGameEventAmIPartyMaster"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$master"  {
+Push register1 "mMaster"
+GetMember
+Push "_visible" register2 0.0
+Equals2
+Not
+SetMember
+Push register2 1 register1 "mMaster"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mMaster"
+GetMember
+Push 1 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "ToolTip"
+GetMember
+Push "remove"
+CallMethod
+Pop
+Push register2 1
+Equals2
+Not
+If loc1d03
+Push 1 "$023007" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Push register1 "mMaster"
+GetMember
+Push 3 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "ToolTip"
+GetMember
+Push "add"
+CallMethod
+Pop
+Jump loc1d70
+loc1d03:Push register2 2
+Equals2
+Not
+If loc1d70
+Push 1 "$023013" 1 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "UIString"
+GetMember
+Push "getUIString"
+CallMethod
+Push register1 "mMaster"
+GetMember
+Push 3 "lib"
+GetVariable
+Push "manager"
+GetMember
+Push "ToolTip"
+GetMember
+Push "add"
+CallMethod
+Pop
+}
+loc1d70:SetMember
+Push register2 "OnGame_CharacterWindow_AchievementRating"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$grade"  {
+Push register2
+ToNumber
+StoreRegister 2
+Pop
+Push register2 1
+Add2
+Push 1 register1 "mST"
+GetMember
+Push "mAchievement"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_DebuffState"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$debuff"  {
+Push register3 1
+Equals2
+Not
+If loc1f23
+Push register1 "_debuffState"
+GetMember
+Not
+Not
+If loc1f1e
+Push 2 1 register1 "mHP"
+GetMember
+Push "mGauge"
+GetMember
+Push "mHPMark"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 2 1 register1 "mHP"
+GetMember
+Push "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push "mc0"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 2 1 register1 "mHP"
+GetMember
+Push "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push "mc1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mHP"
+GetMember
+Push "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text"
+GetMember
+StoreRegister 2
+Pop
+Push 2 1 register1 "mHP"
+GetMember
+Push "mText"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mHP"
+GetMember
+Push "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text" register2
+SetMember
+Push register1 "_debuffState" true
+SetMember
+loc1f1e:Jump loc2046
+loc1f23:Push register1 "_debuffState"
+GetMember
+Not
+If loc2046
+Push 1 1 register1 "mHP"
+GetMember
+Push "mGauge"
+GetMember
+Push "mHPMark"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1 1 register1 "mHP"
+GetMember
+Push "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push "mc0"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1 1 register1 "mHP"
+GetMember
+Push "mGauge"
+GetMember
+Push "mEffect"
+GetMember
+Push "mc1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mHP"
+GetMember
+Push "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text"
+GetMember
+StoreRegister 2
+Pop
+Push 1 1 register1 "mHP"
+GetMember
+Push "mText"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "mHP"
+GetMember
+Push "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text" register2
+SetMember
+Push register1 "_debuffState" false
+SetMember
+}
+loc2046:SetMember
+Push register2 "OnGame_CharacterWindow_SpecialModeOn"
+DefineFunction "" 2 "$type" "$maxTime"  {
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_SpecialModeOff"
+DefineFunction "" 1 "$type"  {
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_AwakenWizard"
+DefineFunction2 "" 4 6 false false true false true false false true false 5 "$element0" 4 "$element1" 2 "$element2" 3 "$stack"  {
+Push register3 register2 register4 register5 4 register1 "mST"
+GetMember
+Push "setAwakenWizard"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "OnGame_CharacterWindow_Debug"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$value"  {
+Push register1 "isDebug" register2 1
+Equals2
+SetMember
+}
+SetMember
+Push register2 "_debuffState" false
+SetMember
+Push register2 "_prevMP" -1
+SetMember
+Push register2 "sLevel" ""
+SetMember
+Push register2 "sName" ""
+SetMember
+Push register2 "_st" 0.0
+SetMember
+Push register2 "isDebug" false
+SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "CharacterWindow"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc21c8:Pop
