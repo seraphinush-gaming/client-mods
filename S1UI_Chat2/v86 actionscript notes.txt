@@ -1,0 +1,288 @@
+NOTE : Basic syllogism of instructions are taken from Owyn's ActionScript notes for the old UI, and permission was granted to make use of those notes to create auto-inspect client mod on S1UI_Chat2.gpk. only auto-inspect function was taken and implemented
+
+//// shift+click auto-inspect
+
+JPEXS Free Flash Decompiler : S1UI_Chat2.gpk > scripts > __Packages > g4 > view > chat > Chat.as
+- Function call here at line :
+  - AS line : 50 | P-code line : 456
+- CHANGE :
+      if(_global.shift)
+      {
+         g4.model.GameModel.chatModel.ToGame_Chat_ClickName(_loc3_,_loc4_,_loc2_,"SHIFT");
+      }
+- TO :
+      if(_global.shift)
+      {
+         g4.model.GameModel.chatModel.ToGame_Chat_SendWriting(0, "<FONT>/inspect " + _loc3_ + "</FONT>", undefined, "/inspect " + _loc3_);
+      }
+- OR :
+      if(_global.shift)
+      {
+         g4.model.GameModel.chatModel.ToGame_Chat_SendWriting(0, "<FONT>/살펴보기 " + _loc3_ + "</FONT>", undefined, "/살펴보기 " + _loc3_);
+      }
+=
+loc0d17:Push register1 "shift"
+GetMember
+Not
+If loc0c22
+Push "/살펴보기 " register3
+Add2
+Push undefined "<FONT>/살펴보기 " register3
+Add2
+Push "</FONT>"
+Add2
+Push 0 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_SendWriting"
+CallMethod
+Pop
+
+
+P-code :
+FROM :
+}
+SetMember
+Push register2 "chatNameAction"
+DefineFunction2 "" 1 7 false false true false true false true false true 6 "data"  {
+Push "@" 1 register6 "split"
+CallMethod
+StoreRegister 5
+Pop
+Push register5 0.0
+GetMember
+StoreRegister 3
+Pop
+Push register5 1
+GetMember
+ToNumber
+StoreRegister 4
+Pop
+Push register5 2
+GetMember
+StoreRegister 2
+Pop
+Push "&&&;" 1 register3 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0b51
+Push false "\'" "&&&;" register3 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 3
+Pop
+loc0b51:Push "&&&;" 1 register2 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0b9a
+Push false "\'" "&&&;" register2 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+loc0b9a:Push "***;" 1 register2 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0be3
+Push false "\"" "***;" register2 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+loc0be3:Push register1 "shift"
+GetMember
+Not
+If loc0c22
+Push "SHIFT" register2 register4 register3 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+Jump loc0c8b
+loc0c22:Push register1 "control"
+GetMember
+Not
+If loc0c61
+Push "CTRL" register2 register4 register3 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+Jump loc0c8b
+loc0c61:Push register2 register4 register3 3 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+}
+
+TO :
+}
+SetMember
+Push register2 "chatNameAction"
+DefineFunction2 "" 1 7 false false true false true false true false true 6 "data"  {
+Push "@" 1 register6 "split"
+CallMethod
+StoreRegister 5
+Pop
+Push register5 0.0
+GetMember
+StoreRegister 3
+Pop
+Push register5 1
+GetMember
+ToNumber
+StoreRegister 4
+Pop
+Push register5 2
+GetMember
+StoreRegister 2
+Pop
+Push "&&&;" 1 register3 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0b51
+Push false "\'" "&&&;" register3 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 3
+Pop
+loc0b51:Push "&&&;" 1 register2 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0b9a
+Push false "\'" "&&&;" register2 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+loc0b9a:Push "***;" 1 register2 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0bb9
+loc0bb9:Push false "\"" "***;" register2 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+Push register1 "shift"
+GetMember
+Not
+If loc0c76
+Push "/살펴보기 " register3
+Add2
+Push undefined "<FONT>/살펴보기 " register3
+Add2
+Push "</FONT>"
+Add2
+Push 0 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_SendWriting"
+CallMethod
+Pop
+Jump loc0cdf
+loc0c76:Push register1 "control"
+GetMember
+Not
+If loc0cb5
+Push "CTRL" register2 register4 register3 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+Jump loc0cdf
+loc0cb5:Push register2 register4 register3 3 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+}

@@ -19,6 +19,8 @@ TERA S1UI client mod
 ## Changelog
 <details>
 
+    2019.08.09
+    - v86 KR update
     2018.11.06
     - Added new CharacterWindow with STGauge
     2018.10.15

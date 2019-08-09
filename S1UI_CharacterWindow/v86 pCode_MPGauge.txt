@@ -1,0 +1,1102 @@
+ConstantPool "_global" "g4" "Object" "view" "characterWindow" "MPGauge" "MovieClip" "prototype" "onLoad" "mAddPoint" "mGaugeGroup" "mBackground" "mMPEffect" "mBackPoint" "_xscale" "mAddPointStamina" "mStamina" "mText" "onRelease" "textHandlerRelease" "util" "Delegate" "create" "UIUtil" "TEXT_FIELD_STYLE_1" "tStamina" "setTextFieldStyle" "textField" "_visible" "bd_mpNormal" "mp" "flash" "display" "BitmapData" "loadBitmap" "bd_stNormal" "st" "bd_mpEffect" "mpEff" "isPercent" "showText" "lib" "gamedata" "CustomizedUIDataKey" "CHARACTERWINDOW_MP_PERCENT_BOOLEAN" "CustomizedUIDataCollection" "getInstance" "saveData" "setTextType" "showValue" "text" "_rate" "Math" "round" "%" "_mp" " / " "_mpMax" "_mpMaxAdd" " + " "setClass" "" "updateST" "_st" "_stMax" "clear" "geom" "Matrix" "beginBitmapFill" "lineTo" "endFill" "/" "drawBack" "vertical" "lineStyle" "beginFill" "_backRate" "moveTo" "updateMP" "gaugeWidth" "_x" "gs" "TweenLite" "killTweensOf" "backRate" "ease" "easing" "Strong" "easeIn" "onComplete" "onComp" "to" "mc" "min" "gotoAndPlay" "setDisplayState" "_state" "TextFormat" "align" "left" "setNewTextFormat" "_y" "right" "__get__backRate" "__set__backRate" "addProperty" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc03ff
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc03ff:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc0437
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc0437:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Not
+Not
+If loc047b
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow" 0.0 "Object"
+NewObject
+SetMember
+loc047b:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "MPGauge"
+GetMember
+Not
+Not
+If loc17d1
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "MPGauge"
+DefineFunction2 "" 0 2 false false false true true false true false false  {
+Push 0.0 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "MPGauge"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "onLoad"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "mAddPoint" register1 "mGaugeGroup"
+GetMember
+Push "mAddPoint"
+GetMember
+SetMember
+Push register1 "mBackground" register1 "mGaugeGroup"
+GetMember
+Push "mBackground"
+GetMember
+SetMember
+Push register1 "mMPEffect" register1 "mGaugeGroup"
+GetMember
+Push "mMPEffect"
+GetMember
+SetMember
+Push register1 "mBackPoint" register1 "mGaugeGroup"
+GetMember
+Push "mBackPoint"
+GetMember
+SetMember
+Push register1 "mMPEffect"
+GetMember
+Push "_xscale" -100
+SetMember
+Push register1 "mAddPointStamina" register1 "mStamina"
+GetMember
+Push "mAddPoint"
+GetMember
+SetMember
+Push register1 "mText"
+GetMember
+Push "onRelease" register1 "textHandlerRelease"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "tStamina"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "TEXT_FIELD_STYLE_1"
+GetMember
+Push register1 "mText"
+GetMember
+Push "textField"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "UIUtil"
+GetMember
+Push "setTextFieldStyle"
+CallMethod
+Pop
+Push register1 "tStamina"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "bd_mpNormal" "mp" 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+SetMember
+Push register1 "bd_stNormal" "st" 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+SetMember
+Push register1 "bd_mpEffect" "mpEff" 1 "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+GetMember
+Push "loadBitmap"
+CallMethod
+SetMember
+}
+SetMember
+Push register2 "textHandlerRelease"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "isPercent" register1 "isPercent"
+GetMember
+Not
+SetMember
+Push 0.0 register1 "showText"
+CallMethod
+Pop
+Push true register1 "isPercent"
+GetMember
+ToNumber
+Push "lib"
+GetVariable
+Push "gamedata"
+GetMember
+Push "CustomizedUIDataKey"
+GetMember
+Push "CHARACTERWINDOW_MP_PERCENT_BOOLEAN"
+GetMember
+Push 3 0.0 "lib"
+GetVariable
+Push "gamedata"
+GetMember
+Push "CustomizedUIDataCollection"
+GetMember
+Push "getInstance"
+CallMethod
+Push "saveData"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setTextType"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$isPercent"  {
+Push register1 "isPercent" register2
+SetMember
+Push 0.0 register1 "showText"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "showValue"
+DefineFunction "" 1 "$value"  {
+}
+SetMember
+Push register2 "showText"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push register1 "isPercent"
+GetMember
+Not
+If loc07f6
+Push register1 "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text" register1 "_rate"
+GetMember
+Push 1000
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+Push 10
+Divide
+Push "%"
+Add2
+SetMember
+Jump loc0856
+loc07f6:Push register1 "_mp"
+GetMember
+Push " / "
+Add2
+Push register1 "_mpMax"
+GetMember
+Add2
+StoreRegister 2
+Pop
+Push register1 "_mpMaxAdd"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0840
+Push register2 " + " register1 "_mpMaxAdd"
+GetMember
+Add2
+Add2
+StoreRegister 2
+Pop
+loc0840:Push register1 "mText"
+GetMember
+Push "textField"
+GetMember
+Push "text" register2
+SetMember
+}
+loc0856:SetMember
+Push register2 "setClass"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$class"  {
+Push register1 "tStamina"
+GetMember
+Push "text" ""
+SetMember
+Push register2
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc0901
+Push register0 1
+StrictEquals
+If loc0901
+Push register0 5
+StrictEquals
+If loc0901
+Push register0 9
+StrictEquals
+If loc0901
+Push register0 10
+StrictEquals
+If loc0901
+Push register0 11
+StrictEquals
+If loc0901
+Push register0 12
+StrictEquals
+If loc0901
+Jump loc0926
+loc0901:Push register1 "mStamina"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc094b
+loc0926:Push register1 "mStamina"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc094b
+}
+loc094b:SetMember
+Push register2 "updateST"
+DefineFunction2 "" 5 6 false false true false true false false true false 5 "$st" 4 "$maxST" 0 "$str" 0 "$maxStr" 0 "$time"  {
+Push register1 "_st" register5
+ToNumber
+SetMember
+Push register1 "_stMax" register4
+ToNumber
+SetMember
+Push register1 "_st"
+GetMember
+Push register1 "_stMax"
+GetMember
+Divide
+StoreRegister 3
+Pop
+Push 313 register3
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0 register1 "mAddPointStamina"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push true false 0.0 "flash"
+GetVariable
+Push "geom"
+GetMember
+Push "Matrix"
+NewMethod
+Push register1 "bd_stNormal"
+GetMember
+Push 4 register1 "mAddPointStamina"
+GetMember
+Push "beginBitmapFill"
+CallMethod
+Pop
+Push 0.0 register2 2 register1 "mAddPointStamina"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 6 register2 2 register1 "mAddPointStamina"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 6 0.0 2 register1 "mAddPointStamina"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 0.0 2 register1 "mAddPointStamina"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 register1 "mAddPointStamina"
+GetMember
+Push "endFill"
+CallMethod
+Pop
+Push register1 "_stMax"
+GetMember
+Push 0.0
+Equals2
+Not
+Not
+If loc0afe
+Push register1 "tStamina"
+GetMember
+Push "text" register1 "_st"
+GetMember
+Push "/"
+Add2
+Push register1 "_stMax"
+GetMember
+Add2
+SetMember
+Jump loc0b0e
+loc0afe:Push register1 "tStamina"
+GetMember
+Push "text" ""
+SetMember
+}
+loc0b0e:SetMember
+Push register2 "drawBack"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push 0.0 register1 "mBackPoint"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push "vertical" true 50 3710975 1 5 register1 "mBackPoint"
+GetMember
+Push "lineStyle"
+CallMethod
+Pop
+Push 80 2902363 2 register1 "mBackPoint"
+GetMember
+Push "beginFill"
+CallMethod
+Pop
+Push register1 "_backRate"
+GetMember
+Push 321
+Multiply
+StoreRegister 2
+Pop
+Push register2 14
+Less2
+Not
+If loc0c29
+Push 13 register2
+Subtract
+Push register2 2 register1 "mBackPoint"
+GetMember
+Push "moveTo"
+CallMethod
+Pop
+Push 13 register2 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 13 0.0 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 13 register2
+Subtract
+Push register2 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Jump loc0daa
+loc0c29:Push register2 307
+Greater
+Not
+If loc0d0a
+Push 321 register2
+Subtract
+StoreRegister 3
+Pop
+Push 0.0 14 2 register1 "mBackPoint"
+GetMember
+Push "moveTo"
+CallMethod
+Pop
+Push 0.0 register2 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register3 register2 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 13 307 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 13 0.0 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 14 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Jump loc0daa
+loc0d0a:Push 0.0 14 2 register1 "mBackPoint"
+GetMember
+Push "moveTo"
+CallMethod
+Pop
+Push 0.0 register2 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 13 register2 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 13 0.0 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 14 2 register1 "mBackPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+loc0daa:Push 0.0 register1 "mBackPoint"
+GetMember
+Push "endFill"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "updateMP"
+DefineFunction2 "" 3 14 false false true false true false false true false 4 "$mp" 8 "$maxMp" 9 "$maxMpAdd"  {
+Push register4
+ToNumber
+StoreRegister 4
+Pop
+Push register8
+ToNumber
+StoreRegister 8
+Pop
+Push register9
+ToNumber
+StoreRegister 9
+Pop
+Push register1 "_rate" register4 register8 register9
+Add2
+Divide
+SetMember
+Push register1 "_rate"
+GetMember
+Push 0.0
+Greater
+If loc0e49
+Push 0.0
+Jump loc0e51
+loc0e49:Push register1 "_rate"
+GetMember
+loc0e51:StoreRegister 7
+Pop
+Push register1 "gaugeWidth"
+GetMember
+Push register7
+Multiply
+Push 1 "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 6
+Pop
+Push 0.0 register1 "mAddPoint"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push true false 0.0 "flash"
+GetVariable
+Push "geom"
+GetMember
+Push "Matrix"
+NewMethod
+Push register1 "bd_mpNormal"
+GetMember
+Push 4 register1 "mAddPoint"
+GetMember
+Push "beginBitmapFill"
+CallMethod
+Pop
+Push 0.0 register6 2 register1 "mAddPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 register6 2 register1 "mAddPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 0.0 2 register1 "mAddPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 0.0 2 register1 "mAddPoint"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 register1 "mAddPoint"
+GetMember
+Push "endFill"
+CallMethod
+Pop
+Push register1 "mMPEffect"
+GetMember
+Push "_x" register6 15
+Add2
+SetMember
+Push register4 register1 "_mp"
+GetMember
+Greater
+Not
+If loc0fb8
+Push 0.0 register1 "mBackPoint"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push register1 "_backRate" register1 "_rate"
+GetMember
+SetMember
+Jump loc105c
+loc0fb8:Push register4 register1 "_mp"
+GetMember
+Less2
+Not
+If loc105c
+Push register1 1 "gs"
+GetVariable
+Push "TweenLite"
+GetMember
+Push "killTweensOf"
+CallMethod
+Pop
+Push "backRate" register1 "_rate"
+GetMember
+Push "ease" "gs"
+GetVariable
+Push "easing"
+GetMember
+Push "Strong"
+GetMember
+Push "easeIn"
+GetMember
+Push "onComplete" register1 "onComp"
+GetMember
+Push register1 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push 3
+InitObject
+Push 0.5 register1 3 "gs"
+GetVariable
+Push "TweenLite"
+GetMember
+Push "to"
+CallMethod
+Pop
+loc105c:Push 0.0 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "clear"
+CallMethod
+Pop
+Push true false 0.0 "flash"
+GetVariable
+Push "geom"
+GetMember
+Push "Matrix"
+NewMethod
+Push register1 "bd_mpEffect"
+GetMember
+Push 4 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "beginBitmapFill"
+CallMethod
+Pop
+Push register7 register1 "gaugeWidth"
+GetMember
+Multiply
+StoreRegister 2
+Pop
+Push register2 14
+Less2
+Not
+If loc11b5
+Push 14 register2
+Subtract
+StoreRegister 5
+Pop
+Push register5 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "moveTo"
+CallMethod
+Pop
+Push register5 5 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 5 register2
+Add2
+Push 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Jump loc14e1
+loc11b5:Push register2 43
+Less2
+Not
+If loc1321
+Push register2 14
+Subtract
+StoreRegister 5
+Pop
+Push 29 register2 2 "Math"
+GetVariable
+Push "min"
+CallMethod
+StoreRegister 3
+Pop
+Push register3 29
+Equals2
+StoreRegister 10
+Pop
+Push 0.0 5 register5
+Add2
+Push 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register10
+Not
+If loc129e
+Push 14 register2 register3
+Subtract
+Subtract
+Push 5 register3
+Add2
+Push 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 5 register3
+Add2
+Push 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Jump loc12c8
+loc129e:Push 14 5 register3
+Add2
+Push 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+loc12c8:Push 14 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Jump loc14e1
+loc1321:Push register2 307
+Greater
+Not
+If loc1441
+Push register2 307
+Subtract
+StoreRegister 5
+Pop
+Push 0.0 34 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 34 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 5 register5
+Add2
+Push 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 register5
+Subtract
+Push 5 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 register5
+Subtract
+Push 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Jump loc14e1
+loc1441:Push 0.0 34 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 34 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 14 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0 0.0 2 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+loc14e1:Push 0.0 register1 "mMPEffect"
+GetMember
+Push "mc"
+GetMember
+Push "endFill"
+CallMethod
+Pop
+Push 2 1 register1 "mMPEffect"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1 "_mp" register4
+SetMember
+Push register1 "_mpMax" register8
+SetMember
+Push register1 "_mpMaxAdd" register9
+SetMember
+Push 0.0 register1 "showText"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "onComp"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0.0 register1 "mBackPoint"
+GetMember
+Push "clear"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setDisplayState"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$state"  {
+Push register1 "_state" register3
+SetMember
+Push register1 "_state"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc1612
+Push 0.0 "TextFormat"
+NewObject
+StoreRegister 2
+Pop
+Push register2 "align" "left"
+SetMember
+Push register2 1 register1 "tStamina"
+GetMember
+Push "setNewTextFormat"
+CallMethod
+Pop
+Push register1 "tStamina"
+GetMember
+Push "_x" 328
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_y" 18
+SetMember
+Jump loc1683
+loc1612:Push register1 "_state"
+GetMember
+Push 1
+Equals2
+Not
+If loc1683
+Push 0.0 "TextFormat"
+NewObject
+StoreRegister 2
+Pop
+Push register2 "align" "right"
+SetMember
+Push register2 1 register1 "tStamina"
+GetMember
+Push "setNewTextFormat"
+CallMethod
+Pop
+Push register1 "tStamina"
+GetMember
+Push "_x" 218
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_y" 35
+SetMember
+loc1683:Push register1 "_mpMaxAdd"
+GetMember
+Push register1 "_mpMax"
+GetMember
+Push register1 "_mp"
+GetMember
+Push 3 register1 "updateMP"
+CallMethod
+Pop
+Push 0.0 "" "" register1 "_stMax"
+GetMember
+Push register1 "_st"
+GetMember
+Push 5 register1 "updateST"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "__get__backRate"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "_backRate"
+GetMember
+Return
+}
+SetMember
+Push register2 "__set__backRate"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "value"  {
+Push register1 "_backRate" register2
+SetMember
+Push 0.0 register1 "drawBack"
+CallMethod
+Pop
+Push 0.0 register1 "__get__backRate"
+CallMethod
+Return
+}
+SetMember
+Push register2 "isPercent" true
+SetMember
+Push register2 "_mp" 0.0
+SetMember
+Push register2 "_state" 0.0
+SetMember
+Push register2 "gaugeWidth" 321
+SetMember
+Push register2 "_backRate" 0.0
+SetMember
+Push register2 "__set__backRate"
+GetMember
+Push register2 "__get__backRate"
+GetMember
+Push "backRate" 3 register2 "addProperty"
+CallMethod
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "characterWindow"
+GetMember
+Push "MPGauge"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc17d1:Pop

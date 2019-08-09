@@ -1,0 +1,1065 @@
+ConstantPool "_global" "g4" "Object" "view" "chat" "Chat" "core" "View" "prototype" "getUIName" "ViewID" "CHAT_2" "configUI" "mainChat" "__get__targetMovieClip" "container_mc" "MainChat" "dividedChatArray" "dividedChatMap" "unusedDividedChatArray" "mTempCoin" "_visible" "chatNameAction" "gfx" "utils" "Delegate" "create" "configGameInterface" "model_mainStageSizeChangeHandler" "model" "GameModelEventType" "MAIN_STAGE_SIZE_CHANGE" "GameModel" "addEventListener" "model_mainUIModeChangeHandler" "MAIN_UI_MODE_CHANGED" "model_chatTabAddHandler" "CHAT_TAB_ADD" "model_chatTabUpdateHandler" "CHAT_TAB_UPDATE" "model_chatTabRemoveHandler" "CHAT_TAB_REMOVE" "model_chatTabAllRemoveHandler" "CHAT_TAB_ALL_REMOVE" "model_chatDividedChatMoveStartHandler" "CHAT_CHAT_TAB_DRAGGING_START" "model_chatChatTextAddHandler" "CHAT_CHAT_TEXT_ADD" "model_chatRefreshHandler" "CHAT_REFRESH" "@" "split" "&&&;" "indexOf" "\'" "lib" "util" "ExtString" "replace" "***;" "\"" "shift" "SHIFT" "chatModel" "ToGame_Chat_ClickName" "control" "CTRL" "checkTab" "getChatTabData" "type" "GameConstants" "CHAT_TAB_TYPE_MAIN" "removeDividedChat" "CHAT_TAB_TYPE_DIVIDED" "getOrCreateDividedChat" "update" "getDividedChat" "length" "DividedChat" "pop" "createDividedChat" "push" "init" "$Chat2.DividedChat" "getNextHighestDepth" "mc_divided_chat_" "attachMovie" "cleanUp" "ArrayUtil" "removeElement" "removeAllDividedChat" "rearrangePositionAfterStageSizeChange" "updateByUIMode" "data" "tabID" "__get__draggingTabID" "CHAT_MAIN_CHAT_DEFAULT_TAB_ID" "startDragging" "clear" "chatTextArray" "addChat" "updateWholeChat" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Not
+Not
+If loc0595
+Push "_global"
+GetVariable
+Push "g4" 0.0 "Object"
+NewObject
+SetMember
+loc0595:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Not
+Not
+If loc05cd
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view" 0.0 "Object"
+NewObject
+SetMember
+loc05cd:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Not
+Not
+If loc0611
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "chat" 0.0 "Object"
+NewObject
+SetMember
+loc0611:Pop
+Push "_global"
+GetVariable
+Push "g4"
+GetMember
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "Chat"
+GetMember
+Not
+Not
+If loc15ac
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "Chat"
+DefineFunction2 "" 1 3 false false false true true false true false false 2 "targetMovieClip"  {
+Push register2 1 register1 undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "Chat"
+GetMember
+Push "g4"
+GetVariable
+Push "core"
+GetMember
+Push "View"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "getUIName"
+DefineFunction "" 0  {
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Return
+}
+SetMember
+Push register2 "configUI"
+DefineFunction2 "" 0 3 false false true false true false false true true  {
+Push register1 "mainChat" 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push 1 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "MainChat"
+NewMethod
+SetMember
+Push register1 "dividedChatArray" 0.0
+InitArray
+SetMember
+Push register1 "dividedChatMap" 0.0
+InitObject
+SetMember
+Push register1 "unusedDividedChatArray" 0.0
+InitArray
+SetMember
+Push 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "container_mc"
+GetMember
+Push "mTempCoin"
+GetMember
+Push "_visible" false
+SetMember
+Push register2 "chatNameAction" register1 "chatNameAction"
+GetMember
+Push register1 2 "gfx"
+GetVariable
+Push "utils"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+}
+SetMember
+Push register2 "configGameInterface"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "model_mainStageSizeChangeHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "MAIN_STAGE_SIZE_CHANGE"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_mainUIModeChangeHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "MAIN_UI_MODE_CHANGED"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatTabAddHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_TAB_ADD"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatTabUpdateHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_TAB_UPDATE"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatTabRemoveHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_TAB_REMOVE"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatTabAllRemoveHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_TAB_ALL_REMOVE"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatDividedChatMoveStartHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_CHAT_TAB_DRAGGING_START"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatChatTextAddHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_CHAT_TEXT_ADD"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+Push "model_chatRefreshHandler" register1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModelEventType"
+GetMember
+Push "CHAT_REFRESH"
+GetMember
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "ViewID"
+GetMember
+Push "CHAT_2"
+GetMember
+Push 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "addEventListener"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "chatNameAction"
+DefineFunction2 "" 1 7 false false true false true false true false true 6 "data"  {
+Push "@" 1 register6 "split"
+CallMethod
+StoreRegister 5
+Pop
+Push register5 0.0
+GetMember
+StoreRegister 3
+Pop
+Push register5 1
+GetMember
+ToNumber
+StoreRegister 4
+Pop
+Push register5 2
+GetMember
+StoreRegister 2
+Pop
+Push "&&&;" 1 register3 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0b51
+Push false "\'" "&&&;" register3 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 3
+Pop
+loc0b51:Push "&&&;" 1 register2 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0b9a
+Push false "\'" "&&&;" register2 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+loc0b9a:Push "***;" 1 register2 "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0bb9
+loc0bb9:Push false "\"" "***;" register2 4 "lib"
+GetVariable
+Push "util"
+GetMember
+Push "ExtString"
+GetMember
+Push "replace"
+CallMethod
+StoreRegister 2
+Pop
+Push register1 "shift"
+GetMember
+Not
+If loc0c76
+Push "/살펴보기 " register3
+Add2
+Push undefined "<FONT>/살펴보기 " register3
+Add2
+Push "</FONT>"
+Add2
+Push 0 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_SendWriting"
+CallMethod
+Pop
+Jump loc0cdf
+loc0c76:Push register1 "control"
+GetMember
+Not
+If loc0cb5
+Push "CTRL" register2 register4 register3 4 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+Jump loc0cdf
+loc0cb5:Push register2 register4 register3 3 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "ToGame_Chat_ClickName"
+CallMethod
+Pop
+}
+loc0cdf:SetMember
+Push register2 "checkTab"
+DefineFunction2 "" 1 5 false false true false true false false true false 4 "tabID"  {
+Push register4 1 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "getChatTabData"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 "type"
+GetMember
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameConstants"
+GetMember
+Push "CHAT_TAB_TYPE_MAIN"
+GetMember
+Equals2
+Not
+If loc0d5f
+Push register4 1 register1 "removeDividedChat"
+CallMethod
+Pop
+Jump loc0dac
+loc0d5f:Push register2 "type"
+GetMember
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameConstants"
+GetMember
+Push "CHAT_TAB_TYPE_DIVIDED"
+GetMember
+Equals2
+Not
+If loc0dac
+Push register4 1 register1 "getOrCreateDividedChat"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0 register3 "update"
+CallMethod
+Pop
+}
+loc0dac:SetMember
+Push register2 "getDividedChat"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "tabID"  {
+Push register1 "dividedChatMap"
+GetMember
+Push register2
+GetMember
+Return
+}
+SetMember
+Push register2 "getOrCreateDividedChat"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "tabID"  {
+Push register3 1 register1 "getDividedChat"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 null
+Equals2
+Not
+If loc0eb7
+Push register1 "unusedDividedChatArray"
+GetMember
+Push "length"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0e6b
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "DividedChat"
+GetMember
+Push 0.0 register1 "unusedDividedChatArray"
+GetMember
+Push "pop"
+CallMethod
+CastOp
+StoreRegister 2
+Pop
+Jump loc0e81
+loc0e6b:Push 0.0 register1 "createDividedChat"
+CallMethod
+StoreRegister 2
+Pop
+loc0e81:Push register2 1 register1 "dividedChatArray"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1 "dividedChatMap"
+GetMember
+Push register3 register2
+SetMember
+Push register3 1 register2 "init"
+CallMethod
+Pop
+loc0eb7:Push register2
+Return
+}
+SetMember
+Push register2 "createDividedChat"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push "$Chat2.DividedChat"
+StoreRegister 2
+Pop
+Push 0.0 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "getNextHighestDepth"
+CallMethod
+Push "mc_divided_chat_" register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+Add2
+Push register2 3 0.0 register1 "__get__targetMovieClip"
+CallMethod
+Push "attachMovie"
+CallMethod
+StoreRegister 3
+Pop
+Push register3 1 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "DividedChat"
+NewMethod
+Return
+}
+SetMember
+Push register2 "removeDividedChat"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "tabID"  {
+Push register3 1 register1 "getDividedChat"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 null
+Equals2
+Not
+If loc0f8e
+Push undefined
+Return
+loc0f8e:Push 0.0 register2 "cleanUp"
+CallMethod
+Pop
+Push register2 register1 "dividedChatArray"
+GetMember
+Push 2 "g4"
+GetVariable
+Push "util"
+GetMember
+Push "ArrayUtil"
+GetMember
+Push "removeElement"
+CallMethod
+Pop
+Push register1 "dividedChatMap"
+GetMember
+Push register3
+Delete
+Pop
+Push register2 1 register1 "unusedDividedChatArray"
+GetMember
+Push "push"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "removeAllDividedChat"
+DefineFunction2 "" 0 5 false false true false true false false true false  {
+Push register1 "dividedChatArray"
+GetMember
+Push null
+Equals2
+PushDuplicate
+If loc102f
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+Push 0.0
+Equals2
+loc102f:Not
+If loc103a
+Push undefined
+Return
+loc103a:Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1070:Push register2 register4
+Less2
+Not
+If loc10e2
+Push "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "DividedChat"
+GetMember
+Push register1 "dividedChatArray"
+GetMember
+Push register2
+GetMember
+CastOp
+StoreRegister 3
+Pop
+Push 0.0 register3 "cleanUp"
+CallMethod
+Pop
+Push register3 1 register1 "unusedDividedChatArray"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1070
+loc10e2:Push register1 "dividedChatArray" 0.0
+InitArray
+SetMember
+Push register1 "dividedChatMap" 0.0
+InitObject
+SetMember
+}
+SetMember
+Push register2 "model_mainStageSizeChangeHandler"
+DefineFunction2 "" 1 4 false false true false true false false true false 0 "event"  {
+Push register1 "dividedChatArray"
+GetMember
+Push null
+Equals2
+PushDuplicate
+If loc114f
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+Push 0.0
+Equals2
+loc114f:Not
+If loc115a
+Push undefined
+Return
+loc115a:Push undefined
+StoreRegister 2
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1187:Push register2 register3
+Less2
+Not
+If loc11dc
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "DividedChat"
+GetMember
+Push register1 "dividedChatArray"
+GetMember
+Push register2
+GetMember
+CastOp
+Push "rearrangePositionAfterStageSizeChange"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1187
+}
+loc11dc:SetMember
+Push register2 "model_mainUIModeChangeHandler"
+DefineFunction2 "" 1 4 false false true false true false false true false 0 "event"  {
+Push register1 "dividedChatArray"
+GetMember
+Push null
+Equals2
+PushDuplicate
+If loc1225
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+Push 0.0
+Equals2
+loc1225:Not
+If loc1230
+Push undefined
+Return
+loc1230:Push undefined
+StoreRegister 2
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc125d:Push register2 register3
+Less2
+Not
+If loc12b2
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "DividedChat"
+GetMember
+Push register1 "dividedChatArray"
+GetMember
+Push register2
+GetMember
+CastOp
+Push "updateByUIMode"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc125d
+}
+loc12b2:SetMember
+Push register2 "model_chatTabAddHandler"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "event"  {
+Push register2 "data"
+GetMember
+Push "tabID"
+GetMember
+Push 1 register1 "checkTab"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "model_chatTabUpdateHandler"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "event"  {
+Push register2 "data"
+GetMember
+Push "tabID"
+GetMember
+Push 1 register1 "checkTab"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "model_chatTabRemoveHandler"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "event"  {
+Push register2 "data"
+GetMember
+Push "tabID"
+GetMember
+Push 1 register1 "removeDividedChat"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "model_chatTabAllRemoveHandler"
+DefineFunction2 "" 1 2 false false true false true false false true false 0 "event"  {
+Push 0.0 register1 "removeAllDividedChat"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "model_chatDividedChatMoveStartHandler"
+DefineFunction2 "" 1 3 false false true false true false false true false 0 "event"  {
+Push 0.0 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "__get__draggingTabID"
+CallMethod
+Push "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameConstants"
+GetMember
+Push "CHAT_MAIN_CHAT_DEFAULT_TAB_ID"
+GetMember
+Equals2
+Not
+If loc13e5
+Push undefined
+Return
+loc13e5:Push 0.0 "g4"
+GetVariable
+Push "model"
+GetMember
+Push "GameModel"
+GetMember
+Push "chatModel"
+GetMember
+Push "__get__draggingTabID"
+CallMethod
+Push 1 register1 "getOrCreateDividedChat"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0 register2 "startDragging"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "model_chatChatTextAddHandler"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "event"  {
+Push register3 "data"
+GetMember
+Push "tabID"
+GetMember
+Push 1 register1 "getDividedChat"
+CallMethod
+StoreRegister 2
+Pop
+Push register2 null
+Equals2
+Not
+If loc147c
+Push undefined
+Return
+loc147c:Push register3 "data"
+GetMember
+Push "clear"
+GetMember
+Push register3 "data"
+GetMember
+Push "chatTextArray"
+GetMember
+Push 2 register2 "addChat"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "model_chatRefreshHandler"
+DefineFunction2 "" 1 4 false false true false true false false true false 0 "event"  {
+Push register1 "dividedChatArray"
+GetMember
+Push null
+Equals2
+PushDuplicate
+If loc14ef
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+Push 0.0
+Equals2
+loc14ef:Not
+If loc14fa
+Push undefined
+Return
+loc14fa:Push undefined
+StoreRegister 2
+Pop
+Push register1 "dividedChatArray"
+GetMember
+Push "length"
+GetMember
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1527:Push register2 register3
+Less2
+Not
+If loc157c
+Push 0.0 "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "DividedChat"
+GetMember
+Push register1 "dividedChatArray"
+GetMember
+Push register2
+GetMember
+CastOp
+Push "updateWholeChat"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1527
+}
+loc157c:SetMember
+Push 1 null "g4"
+GetVariable
+Push "view"
+GetMember
+Push "chat"
+GetMember
+Push "Chat"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc15ac:Pop

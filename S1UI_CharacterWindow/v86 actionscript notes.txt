@@ -1,0 +1,436 @@
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+//// Activiate STGauge as class-specific bar, deactivate STGauge rhombus
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+
+scripts > __Packages > g4 > view > characterWindow > CharacterWindow :
+
+1. line 1378 to 1407 (AS line 254) : // activate STGauge UI
+
+FROM :
+}
+SetMember
+Push register2 "OnGameEventUpdateST"
+DefineFunction2 "" 5 7 false false true false true false false true false 5 "$st" 6 "$maxSt" 3 "$str" 4 "$maxStr" 2 "$time"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc20d2
+Push register0 1
+StrictEquals
+If loc20d2
+Push register0 5
+StrictEquals
+If loc20d2
+Jump loc20f5
+loc20d2:Push register2 register4 register3 register6 register5 5 register1 "mMP"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc2118
+loc20f5:Push register2 register4 register3 register6 register5 5 register1 "mST"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc2118
+}
+
+TO :
+}
+SetMember
+Push register2 "OnGameEventUpdateST"
+DefineFunction2 "" 5 7 false false true false true false false true false 5 "$st" 6 "$maxSt" 3 "$str" 4 "$maxStr" 2 "$time"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc20d2
+Push register0 1
+StrictEquals
+If loc20d2
+Push register0 5
+StrictEquals
+If loc20d2
+Push register0 9
+StrictEquals
+If loc20d2
+Push register0 10
+StrictEquals
+If loc20d2
+Push register0 11
+StrictEquals
+If loc20d2
+Push register0 12
+StrictEquals
+If loc20d2
+Jump loc20f5
+loc20d2:Push register2 register4 register3 register6 register5 5 register1 "mMP"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc2118
+loc20f5:Push register2 register4 register3 register6 register5 5 register1 "mST"
+GetMember
+Push "updateST"
+CallMethod
+Pop
+Jump loc2118
+}
+
+2. line 508 to 529 (AS line 86)  : // deactivate rhombus gauge from updating entirely
+
+FROM :
+}
+SetMember
+Push register2 "gaugeValueHandlerShow"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$value"  {
+Push register3
+ToNumber
+Push 1
+Equals2
+Not
+StoreRegister 2
+Pop
+Push register2 1 register1 "mST"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+Push register2 1 register1 "mMP"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+}
+
+TO :
+}
+loc0b52:SetMember
+Push register2 "gaugeValueHandlerShow"
+DefineFunction2 "" 1 4 false false true false true false false true false 3 "$value"  {
+Push register3
+ToNumber
+Push 1
+Equals2
+Not
+StoreRegister 2
+Pop
+Push register2 1 register1 "mMP"
+GetMember
+Push "showValue"
+CallMethod
+Pop
+}
+
+
+
+scripts > __Packages > g4 > view > characterWindow > MPGauge :
+
+1. line 309 to 347 (AS line 58) : // let classes 9-12 use STGauge of MPGauge
+FROM :
+}
+loc0856:SetMember
+Push register2 "setClass"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$class"  {
+Push register1 "tStamina"
+GetMember
+Push "text" ""
+SetMember
+Push register2
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc08c1
+Push register0 1
+StrictEquals
+If loc08c1
+Push register0 5
+StrictEquals
+If loc08c1
+Jump loc08e6
+loc08c1:Push register1 "mStamina"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc090b
+loc08e6:Push register1 "mStamina"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc090b
+}
+
+TO :
+}
+loc0856:SetMember
+Push register2 "setClass"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$class"  {
+Push register1 "tStamina"
+GetMember
+Push "text" ""
+SetMember
+Push register2
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc08c1
+Push register0 1
+StrictEquals
+If loc08c1
+Push register0 5
+StrictEquals
+If loc08c1
+Push register0 9
+StrictEquals
+If loc08c1
+Push register0 10
+StrictEquals
+If loc08c1
+Push register0 11
+StrictEquals
+If loc08c1
+Push register0 12
+StrictEquals
+If loc08c1
+Jump loc08e6
+loc08c1:Push register1 "mStamina"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc090b
+loc08e6:Push register1 "mStamina"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tStamina"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc090b
+}
+//
+   function setClass($class)
+   {
+      this.tStamina.text = "";
+      switch($class)
+      {
+         case 0:
+         case 1:
+         case 5:
+         case 9:
+         case 10:
+         case 11:
+         case 12:
+            this.mStamina._visible = true;
+            this.tStamina._visible = true;
+            break;
+         default:
+            this.mStamina._visible = false;
+            this.tStamina._visible = false;
+      }
+   }
+
+
+
+scripts > __Packages > g4 > view > characterWindow > STGauge :
+
+1. line 1523 to 1656 (AS line 414) : // deactivate show value on rhombus
+
+FROM :
+}
+SetMember
+Push register2 "showValue"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$value"  {
+Push register1 "_class"
+GetMember
+StoreRegister 0
+Push 0.0
+StrictEquals
+If loc219e
+Push register0 9
+StrictEquals
+If loc219e
+Push register0 10
+StrictEquals
+If loc219e
+Push register0 11
+StrictEquals
+If loc219e
+Push register0 12
+StrictEquals
+If loc219e
+Jump loc21a3
+loc219e:Jump loc220e
+loc21a3:Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push undefined
+Return
+loc220e:Push register2
+Not
+If loc22e7
+Push register1 "mClass"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "mFullClass"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "textType"
+GetMember
+Push 1
+Equals2
+Not
+If loc229b
+Push register1 "tStack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Jump loc22e2
+loc229b:Push register1 "textType"
+GetMember
+Push 2
+Equals2
+Not
+If loc22e2
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" true
+SetMember
+loc22e2:Jump loc234d
+loc22e7:Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+}
+
+TO :
+}
+SetMember
+Push register2 "showValue"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "$value"  {
+Push register1 "mFullClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mClass"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "mFullAnim"
+GetMember
+Push "mClassBack"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "tStack"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST0"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "tST1"
+GetMember
+Push "_visible" false
+SetMember
+Push undefined
+Return
+}
+//
+   function showValue($value)
+   {
+      this.mFullClass._visible = true;
+      this.mClass._visible = true;
+      this.mFullAnim.mClassBack._visible = true;
+      this.tStack._visible = false;
+      this.tST0._visible = false;
+      this.tST1._visible = false;
+      return undefined;
+   }
