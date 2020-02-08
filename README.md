@@ -1,13 +1,13 @@
-# client-mod
+# client-mod [![paypal](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=253B80&colorB=333333)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url) [![paypal.me](https://img.shields.io/badge/paypal.me-donate-333333.svg?colorA=169BD7&colorB=333333)](https://www.paypal.me/seraphinush)
 TERA S1UI client mod
+```
+Support seraph via paypal donations, thanks in advance !
+```
 
 ## Installation
 - Make directory at TERA/S1Game/CookedPC called `_mod`
 - Unzip wanted client mods into `_mod` folder
 - [Preview](https://github.com/seraphinush-gaming/client-mod/wiki)
-
-## Info
-- **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
 
 ## Credits
 - Owyn
