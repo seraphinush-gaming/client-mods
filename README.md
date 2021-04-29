@@ -1,13 +1,19 @@
-# client-mod [![paypal](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=253B80&colorB=333333)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url) [![paypal.me](https://img.shields.io/badge/paypal.me-donate-333333.svg?colorA=169BD7&colorB=333333)](https://www.paypal.me/seraphinush)
-TERA S1UI client mod
+### DEPRECATION NOTICE
+Deprecated. please refer to 64bit client mods available on TERA Toolbox.
+
+----
+
 ```
-Support seraph via paypal donations, thanks in advance !
+Support seraph via donations, thanks in advance !
 ```
+
+# client-mods [![](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=0070BA&colorB=333333)](https://www.paypal.me/seraphinush) [![](https://img.shields.io/badge/patreon-pledge-333333.svg?colorA=F96854&colorB=333333)](https://www.patreon.com/seraphinush)
+TERA S1UI client mods
 
 ## Installation
 - Make directory at TERA/S1Game/CookedPC called `_mod`
 - Unzip wanted client mods into `_mod` folder
-- [Preview](https://github.com/seraphinush-gaming/client-mod/wiki)
+- [Preview](https://github.com/ylennia-archives/client-mods/wiki)
 
 ## Credits
 - Owyn
@@ -19,6 +25,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    64bit update
+    - Deprecated
     2019.08.09
     - v86 KR update
     2018.11.06
